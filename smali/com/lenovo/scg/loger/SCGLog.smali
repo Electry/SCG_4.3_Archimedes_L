@@ -104,6 +104,11 @@
     move-object v0, v4
 
     .local v0, "arr$":[Ljava/lang/StackTraceElement;
+
+    if-eqz v0, :cond_2
+    :cond_2
+    return-void
+
     array-length v2, v0
 
     .local v2, "len$":I
