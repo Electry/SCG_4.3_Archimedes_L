@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?titleBarBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fbActionBar" layout="@layout/fb_actionbar" />
+    <View android:id="@id/fbActionBarDivider" android:background="?fbLineColor" android:layout_width="fill_parent" android:layout_height="@dimen/fb_divider_size" />
+    <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

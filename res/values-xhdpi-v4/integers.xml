@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="voice_shuttor_indicator_margin_left">25</integer>
+    <integer name="voice_shuttor_indicator_margin_top">900</integer>
+    <integer name="panorama_still_image_width">3264</integer>
+    <integer name="panorama_still_image_height">2448</integer>
+    <integer name="panorama_preview_image_width">640</integer>
+    <integer name="panorama_preview_image_height">480</integer>
+    <integer name="panorama_panomode_style">0</integer>
+    <integer name="panorama_previewrect_toright_offset">5</integer>
+    <integer name="panorama_previewrect_toleft_offset">2</integer>
+    <integer name="panorama_previewrect2_toright_offset">4</integer>
+    <integer name="panorama_previewrect2_toleft_offset">3</integer>
+    <integer name="panorama_preview_animiatiom_ratio">110</integer>
+    <integer name="asymptote_circle_length">15</integer>
+    <integer name="panorama_mode_switcher_width">200</integer>
+    <integer name="panorama_mode_switcher_height">54</integer>
+    <integer name="pano_col">2</integer>
+    <integer name="pano_row">1</integer>
+    <integer name="show_all_pano_col">1</integer>
+    <integer name="show_all_pano_row">5</integer>
+    <integer name="normal_col">4</integer>
+    <integer name="normal_row">4</integer>
+    <integer name="show_all_normal_col">4</integer>
+    <integer name="show_all_normal_row">5</integer>
+</resources>

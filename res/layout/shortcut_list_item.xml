@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/shortcutitem1." android:background="@drawable/shortcutitemselect_selector" android:layout_width="@dimen/camera_shortcut_list_width_row" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/nothing" />
+    <ImageView android:id="@id/button" android:background="@drawable/shortcutitem_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/nothing" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/button" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+</RelativeLayout>

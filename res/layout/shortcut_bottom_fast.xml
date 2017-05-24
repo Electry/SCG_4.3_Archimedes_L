@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.shortcut.FastView android:id="@id/fastview" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:background="@drawable/camera_shortcut_video_fast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="@string/nothing" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/camera_shortcut_bottom_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/icon">
+        <ImageView android:id="@id/button4x" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:contentDescription="@string/nothing" />
+        <ImageView android:id="@id/button2x" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+    </LinearLayout>
+</com.lenovo.scg.camera.shortcut.FastView>

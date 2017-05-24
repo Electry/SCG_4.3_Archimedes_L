@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/shutter_button_switch_set" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.lenovo.scg">
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/shutter_loading_bg" android:padding="@dimen/shutter_button_padding" android:visibility="gone" android:layout_width="@dimen/shutter_button_width" android:layout_height="@dimen/shutter_button_width" android:src="@drawable/btn_camera_blue_1" android:scaleType="center" />
+    <com.lenovo.scg.camera.ui.LoadingBar android:id="@id/shutter_loading" android:layout_width="@dimen/shutter_button_width" android:layout_height="@dimen/shutter_button_width" android:layout_marginLeft="3.0dip" android:layout_marginTop="5.0dip" app:circle="@drawable/btn_camera_blue_3" />
+</RelativeLayout>

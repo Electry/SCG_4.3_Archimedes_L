@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@color/photo_edit_views_hi_bg" />
+    <item android:drawable="@color/photo_special_effect_cancel_bg" />
+</selector>

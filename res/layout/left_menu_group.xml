@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/rlMenuGroup" android:background="@drawable/more_popup_bg4" android:visibility="gone" android:layout_width="190.0dip" android:layout_height="110.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/rlSetting" android:background="@drawable/main_llcategory_text_bg_selector" android:clickable="true" android:layout_width="178.0dip" android:layout_height="53.0dip">
+            <ImageView android:id="@id/imgSetting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:src="@drawable/pscenter_setting_btn_selector" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/sg_text_size_20" android:textColor="@drawable/right_menu_group_text_selector" android:id="@id/textSetting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/sCenterSetting" android:layout_toRightOf="@id/imgSetting" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rlAbout" android:background="@drawable/main_llcategory_text_bg_selector" android:clickable="true" android:layout_width="178.0dip" android:layout_height="53.0dip" android:layout_below="@id/rlSetting" android:layout_alignLeft="@id/rlSetting">
+            <ImageView android:id="@id/imgAbout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:src="@drawable/pscenter_about_btn_selector" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/sg_text_size_20" android:textColor="@drawable/right_menu_group_text_selector" android:id="@id/textAbout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/sCenterAbout" android:layout_toRightOf="@id/imgAbout" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

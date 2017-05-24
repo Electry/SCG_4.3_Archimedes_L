@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.ui.RotateImageView android:id="@id/thumbnail" android:padding="5.0dip" android:focusable="false" android:clickable="true" android:layout_width="@dimen/review_thumbnail_width" android:layout_height="@dimen/review_thumbnail_width" android:layout_marginRight="@dimen/review_thumbnail_marginright" android:layout_marginBottom="37.333282dip" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:onClick="onThumbnailClicked" android:contentDescription="@string/accessibility_review_thumbnail"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

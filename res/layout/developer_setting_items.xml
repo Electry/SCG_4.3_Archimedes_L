@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dev_setting_items_root" android:background="@color/popup_background" android:layout_width="322.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/developer_zsd_rl_id_monitor_title" android:background="#ff666666" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="322.0dip" android:layout_height="30.0dip">
+        <TextView android:textSize="16.0sp" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_setting_groups_monitor" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/devider_below_monitor_title" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/developer_zsd_rl_id_monitor_title" />
+    <RelativeLayout android:id="@id/developer_monitor_rl_id" android:background="#ff333333" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="322.0dip" android:layout_height="55.0dip" android:layout_below="@id/devider_below_monitor_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:id="@id/developer_monitor_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_monitor_tv" />
+            <TextView android:textSize="10.0sp" android:id="@id/developer_monitor_tv_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_monitor_comment" />
+        </LinearLayout>
+        <CheckBox android:id="@id/developer_setting_monitor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/devider_02" android:layout_width="fill_parent" android:layout_height="0.3333dip" android:layout_below="@id/developer_monitor_rl_id" />
+    <RelativeLayout android:id="@id/developer_zsd_rl_id_debug_title" android:background="#ff666666" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="322.0dip" android:layout_height="30.0dip" android:layout_below="@id/devider_02">
+        <TextView android:textSize="16.0sp" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_setting_groups_debug" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/devider_below_debug_title" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/developer_zsd_rl_id_debug_title" />
+    <RelativeLayout android:id="@id/developer_zsd_rl_id" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/devider_below_debug_title">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_zsd_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_zsd_tv" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_setting_zsd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_focus_info" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_setting_focus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/close_agender_detect" android:background="#ff333333" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="322.0dip" android:layout_height="55.0dip" android:layout_below="@id/developer_zsd_rl_id">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_close_ageder_detect" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/developer_close_agender_detect_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ae_area_displayer" android:background="#ff333333" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="322.0dip" android:layout_height="55.0dip" android:layout_below="@id/close_agender_detect">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_display_ae_area_debug" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/developer_display_ae_area_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_001" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/ae_area_displayer">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_camera_devices_operate_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cameradevices_operate_tv" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_camera_devices_operate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_002" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_item_001">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="55.0dip" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/full_size_tv_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_full_pic_video_seize_tv" android:layout_centerVertical="true" />
+                <TextView android:textSize="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_monitor_comment" android:layout_below="@id/full_size_tv_big" />
+                <CheckBox android:id="@id/developer_full_pic_video_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_preview_layout" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_item_002">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="55.0dip" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/full_size_tv_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_full_preview_size" android:layout_centerVertical="true" />
+                <TextView android:textSize="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_monitor_comment" android:layout_below="@id/full_size_tv_big" />
+                <CheckBox android:id="@id/developer_full_preview_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_003" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_item_preview_layout">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_camera_hdr_dump_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_hdr_dump" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_setting_hdr_dump" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_004" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:visibility="gone" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_item_003">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_camera_hdr_zsl_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_hdr_zsl" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_setting_hdr_zsl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_005" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:visibility="gone" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_item_004">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_camera_lowlit_zsl_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_lowlit_zsl" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_setting_lowlit_zsl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_006" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_item_005">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_camera_strobe_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_strobe_debug" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_setting_strobe_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_007" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_item_006">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_tv_mem_analysis_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_mem_analysis_log" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_cb_mem_analysis_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_008" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_item_007">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_captureway_promptre" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_capture_way_prompter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_009" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_item_008">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_real_night_tv" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_real_night_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_010" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_item_009">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_camera_panorama_ex_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_panorama_ex_lock" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_setting_panorama_ex_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_011" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_item_010">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_camera_video_filling" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_video_recording" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_setting_video_filling" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_012" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_item_011">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_camera_panorama_4k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_panorama_4k" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_setting_panorama_4k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_item_013" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_item_012">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_tv_rewind_dump" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_rewind_dump" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_cb_rewind_dump" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/devider_01" android:layout_width="fill_parent" android:layout_height="0.3333dip" android:layout_below="@id/developer_item_013" />
+    <RelativeLayout android:id="@id/developer_mode_pro_setting" android:background="#ff666666" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="322.0dip" android:layout_height="30.0dip" android:layout_below="@id/devider_01">
+        <TextView android:textSize="16.0sp" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_setting_groups_mode_pro" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/devider_below_mode_pro_setting" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/developer_mode_pro_setting" />
+    <RelativeLayout android:id="@id/developer_mode_pro_item_1" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/devider_below_mode_pro_setting">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_art_hdr" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_setting_art_hdr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_super_night" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_setting_super_night" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/developer_mode_pro_item_2" android:background="#ff333333" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="322.0dip" android:layout_height="42.333282dip" android:layout_below="@id/developer_mode_pro_item_1">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_trajectory" android:layout_centerVertical="true" />
+                <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_beauty_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_beauty_tv" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/developer_setting_beauty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/devider_below_mode_pro_setting_item1" android:layout_width="fill_parent" android:layout_height="0.3333dip" android:layout_below="@id/developer_mode_pro_item_2" />
+    <RelativeLayout android:id="@id/developer_zsd_rl_id_user_title" android:background="#ff666666" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="322.0dip" android:layout_height="30.0dip" android:layout_below="@id/devider_below_mode_pro_setting_item1">
+        <TextView android:textSize="16.0sp" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_setting_groups_user" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/devider_below_user_title" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/developer_zsd_rl_id_user_title" />
+    <RelativeLayout android:id="@id/developer_mode_back" android:background="#ff333333" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="322.0dip" android:layout_height="105.0dip" android:layout_below="@id/devider_below_user_title">
+        <TextView android:id="@id/developer_mode_back" android:paddingTop="14.666595dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_mode_back_name" />
+        <RadioGroup android:id="@id/developer_setting_mode_back" android:paddingBottom="14.666595dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/developer_mode_back" android:layout_alignParentRight="true" android:layout_centerHorizontal="true">
+            <RadioButton android:id="@id/developer_mode_back_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <RadioButton android:id="@id/developer_mode_back_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RadioGroup>
+        <LinearLayout android:orientation="vertical" android:id="@id/developer_radiogroup_text" android:paddingBottom="14.666595dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/developer_mode_back" android:layout_alignTop="@id/developer_setting_mode_back" android:layout_alignBottom="@id/developer_setting_mode_back">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_radio_text_1" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_mode_back_item_1" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_radio_text_2" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_mode_back_iteam_2" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/devider_03" android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="0.3333dip" android:layout_below="@id/developer_mode_back" />
+    <RelativeLayout android:id="@id/developer_watch_back_rl_id" android:background="#ff333333" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="322.0dip" android:layout_height="105.0dip" android:layout_below="@id/devider_03">
+        <TextView android:id="@id/developer_watch_back_tv" android:paddingTop="14.666595dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_ui_watch_back" />
+        <RadioGroup android:id="@id/developer_setting_watch_abck" android:paddingBottom="14.666595dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/developer_watch_back_tv" android:layout_alignParentRight="true" android:layout_centerHorizontal="true">
+            <RadioButton android:id="@id/developer_watch_back_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <RadioButton android:id="@id/developer_watch_back_def" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RadioGroup>
+        <LinearLayout android:orientation="vertical" android:id="@id/developer_radiogroup_text" android:paddingBottom="14.666595dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/developer_watch_back_tv" android:layout_alignTop="@id/developer_setting_watch_abck" android:layout_alignBottom="@id/developer_setting_watch_abck">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_radio_text_1" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_watch_back_right" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/developer_radio_text_2" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_watch_back_thumbnail" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/devider_04" android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="0.3333dip" android:layout_below="@id/developer_watch_back_rl_id" />
+    <RelativeLayout android:id="@id/auto_show_list" android:background="#ff333333" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="322.0dip" android:layout_height="55.0dip" android:layout_below="@id/devider_04">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_auto_setting_list_show" />
+            <TextView android:textSize="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/developer_auto_setting_list_show_explain" />
+        </LinearLayout>
+        <CheckBox android:id="@id/developer_setting_auto_focusmode_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

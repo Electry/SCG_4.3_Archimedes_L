@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/local_time_album_time_tag_list_background" android:layout_centerInParent="true" />
+    <TextView android:textSize="16.0dip" android:textColor="@drawable/local_time_album_time_tag_list_name_color" android:id="@id/time_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="29.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@drawable/local_time_album_time_tag_list_count_color" android:id="@id/time_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

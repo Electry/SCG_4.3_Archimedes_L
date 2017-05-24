@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?titleBarBackground" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fbActionBar" layout="@layout/fb_actionbar" />
+    <View android:id="@id/fbActionBarDivider" android:background="?fbLineColor" android:layout_width="fill_parent" android:layout_height="@dimen/fb_divider_size" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/fb_activity_horizontal_margin_pad" android:paddingRight="@dimen/fb_activity_horizontal_margin_pad" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/feedback_text_size_18" android:textColor="?titleNameTextColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fb_app_name" />
+                <TextView android:textSize="@dimen/feedback_text_size_12" android:textColor="?titleNameTextColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feedback_vertical_margin_8" android:layout_marginBottom="@dimen/feedback_vertical_margin_12" android:text="@string/fb_app_settings_desp" android:alpha="@dimen/feedback_line_alpha6" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fb_contacts_title_edit_margin_pad">
+                    <TextView android:textSize="@dimen/fb__edittext_title_size" android:textColor="?titleNameTextColor" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/fb_setting_name" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/fb__edittext_title_size" android:textColor="?titleNameTextColor" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:text="@string/fb_setting_phone" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textColor="?titleNameTextColor" android:id="@id/editText_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/fb_setting_input_name" android:singleLine="true" android:maxLength="25" android:layout_weight="1.0" android:inputType="textPersonName" />
+                    <EditText android:textColor="?titleNameTextColor" android:id="@id/editText_phone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:hint="@string/fb_setting_input_phone" android:singleLine="true" android:layout_weight="1.0" android:inputType="phone" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fb_contacts_edit_nexttitle_margin_pad">
+                    <TextView android:textSize="@dimen/fb__edittext_title_size" android:textColor="?titleNameTextColor" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/fb_setting_email" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/fb__edittext_title_size" android:textColor="?titleNameTextColor" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:text="@string/fb_qq" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textColor="?titleNameTextColor" android:id="@id/editText_email" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/fb_setting_input_email" android:singleLine="true" android:layout_weight="1.0" android:inputType="textEmailAddress" />
+                    <EditText android:textColor="?titleNameTextColor" android:id="@id/editText_qq" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:hint="@string/fb_input_qq" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/fb_bottom_btn_height">
+            <View android:background="?fbLineColor" android:layout_width="fill_parent" android:layout_height="@dimen/fb_divider_size" />
+            <Button android:textSize="@dimen/feedback_text_size_18" android:textColor="?submitBtnTextColor" android:gravity="center" android:id="@id/btn_ok" android:background="?submitBtnBackgroundColor" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/fb_save" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

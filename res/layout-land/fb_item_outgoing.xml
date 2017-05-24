@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/feedback_text_size_8" android:textColor="#ff9b9b9b" android:layout_gravity="left" android:id="@id/nametime" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/outgoing" android:layout_centerVertical="true" />
+    <ImageView android:layout_gravity="left" android:id="@id/out_img_view" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fb_list_alert_sms_failed" android:layout_toLeftOf="@id/outgoing" android:layout_centerVertical="true" android:contentDescription="@string/fb_resend" />
+    <TextView android:textColor="@color/fb_transparent" android:gravity="center|left" android:id="@id/outgoing" android:background="@drawable/fb_bg_outgoing" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:maxWidth="250.0dip" android:layout_alignParentRight="true" style="@style/FbChatNameStyle" />
+</RelativeLayout>

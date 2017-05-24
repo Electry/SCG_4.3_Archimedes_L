@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlModeRet" android:layout_width="fill_parent" android:layout_height="@dimen/control_panel_min_length" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/mode_ret_button" android:padding="@dimen/mode_button_padding" android:visibility="gone" android:layout_width="@dimen/mode_button_width" android:layout_height="@dimen/mode_button_width" android:layout_marginLeft="@dimen/mode_button_marginright" android:src="@drawable/camera_show_mode_view_back_button" android:layout_centerVertical="true" android:onClick="onModeRetButtonClick" />
+</RelativeLayout>

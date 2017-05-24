@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/long_loading_layout" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/view1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/long_loading_image1" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/view2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/long_loading_image2" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/view3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/long_loading_image3" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/view4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/long_loading_image4" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <com.lenovo.scg.camera.ui.RotateLayout android:id="@id/image_loading_view_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+      xmlns:lenovo="http://schemas.android.com/apk/res/com.lenovo.scg">
+        <TextView android:gravity="center" android:id="@id/long_loading_text" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:text="@string/wait" />
+    </com.lenovo.scg.camera.ui.RotateLayout>
+</RelativeLayout>

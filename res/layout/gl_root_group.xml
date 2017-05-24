@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.scg.gallery3d.ui.GLRootView android:id="@id/gl_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.lenovo.scg.camera.ui.RotateLayout android:id="@id/rlFrame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:lenovo="http://schemas.android.com/apk/res/com.lenovo.scg">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/play_panorama" android:padding="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/control_panorama_bg" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@id/date_mark" android:padding="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </com.lenovo.scg.camera.ui.RotateLayout>
+</merge>

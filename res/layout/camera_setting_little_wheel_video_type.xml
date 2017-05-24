@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.setting.view.CurveRelativeLayout android:id="@id/camera_setting_little_wheel_take_pic_type" android:background="#00000000" android:visibility="gone" android:layout_width="360.0dip" android:layout_height="640.0dip" android:rotation="90.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_top1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RadioButton android:id="@id/cs_video_type_normal" android:background="@drawable/camera_setting_little_whell_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/cs_lw_video_normal_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:scaleX="0.8" android:scaleY="0.8" android:rotation="180.0" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_top2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RadioButton android:id="@id/cs_video_type_live" android:background="@drawable/camera_setting_little_whell_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/cs_lw_video_live_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:scaleX="0.8" android:scaleY="0.8" android:rotation="180.0" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_bottom1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RadioButton android:id="@id/cs_video_type_speed" android:background="@drawable/camera_setting_little_whell_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/cs_lw_video_speed_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:scaleX="0.8" android:scaleY="0.8" android:rotation="180.0" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_bottom2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RadioButton android:id="@id/cs_video_type_slow" android:background="@drawable/camera_setting_little_whell_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/cs_lw_video_slow_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:scaleX="0.8" android:scaleY="0.8" android:rotation="180.0" />
+    </RelativeLayout>
+</com.lenovo.scg.camera.setting.view.CurveRelativeLayout>

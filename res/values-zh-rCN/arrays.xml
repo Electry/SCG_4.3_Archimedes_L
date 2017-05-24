@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="face_beauty_age_adj_child">
+        <item>聪明伶俐</item>
+        <item>天真无邪</item>
+        <item>青春亮丽</item>
+        <item>动感十足</item>
+        <item>热情奔放</item>
+        <item>活泼开朗</item>
+        <item>豆蔻年华</item>
+        <item>青春年少</item>
+    </string-array>
+    <string-array name="face_beauty_age_adj_middle_age">
+        <item>温文尔雅</item>
+        <item>端庄优雅</item>
+        <item>沉稳干练</item>
+        <item>气场十足</item>
+    </string-array>
+</resources>

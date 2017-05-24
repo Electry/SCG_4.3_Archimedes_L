@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="?personalInfoBtn" android:id="@id/menu_personalInfo" android:visible="false" android:title="@string/fb_account_info" android:showAsAction="always" />
+    <item android:icon="?myFeedbackBtn" android:id="@id/menu_my_feedback" android:visible="false" android:title="@string/fb_my_feedback" android:showAsAction="always" />
+</menu>

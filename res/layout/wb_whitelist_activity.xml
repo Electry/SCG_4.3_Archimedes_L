@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/wb_time_list_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/wb_whitelist_titlelayout" android:background="@drawable/main_llcategory_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/wb_whitelist_titleimage" android:background="@drawable/pscenter_setting_item_selector" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="63.0dip" android:layout_height="52.0dip" android:src="@drawable/sharecenter_back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <TextView android:textSize="17.699982dip" android:textColor="@drawable/wb_whitelist_update_color_selector" android:id="@id/wb_whitelist_updatebtn" android:background="@drawable/pscenter_setting_item_selector" android:paddingLeft="15.0dip" android:paddingTop="17.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wb_refresh" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/wb_whitelist_divider" android:background="#7fffffff" android:layout_width="1.0dip" android:layout_height="26.0dip" android:layout_toLeftOf="@id/wb_whitelist_updatebtn" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="192.29999dip" android:layout_height="33.299988dip" android:layout_marginLeft="84.0dip" android:layout_centerVertical="true">
+            <EditText android:textSize="15.109985dip" android:textColor="#ff8a8a8a" android:id="@id/wb_whitelist_searchedit" android:background="#ff5a5a5a" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/wb_whitelist_search_hint" android:singleLine="true" android:textCursorDrawable="@null" />
+            <ImageView android:id="@id/wb_whitelist_searchicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/wb_whitelist_search_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/wb_whitelist_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/wb_whitelist_titlelayout">
+        <com.lenovo.scg.gallery3d.weibo.ui.DragBelowUpdateListView android:id="@id/wb_whitelist_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="#ff575757" android:dividerHeight="0.70000005dip" android:fastScrollEnabled="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/wb_whitelist_emptylayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/wb_whitelist_emptytext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minLines="1" />
+            <Button android:id="@id/wb_whitelist_emptybtn" android:background="@drawable/wb_time_btn_bg_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/wb_get_again" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

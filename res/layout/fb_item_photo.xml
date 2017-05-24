@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?submitBtnBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/fb_add_pic_width" android:layout_height="@dimen/fb_add_pic_width" android:layout_centerInParent="true">
+        <ImageView android:id="@id/imageViewBackground" android:background="?feedbackIcAddPic" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="centerInside" android:layout_centerInParent="true" android:contentDescription="@string/fb_add_photo" />
+        <ImageView android:id="@id/image" android:background="@drawable/fb_added_pic_bg" android:layout_width="@dimen/fb_add_pic_width" android:layout_height="@dimen/fb_add_pic_width" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/del" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_alignTop="@id/image" android:layout_alignRight="@id/image" />
+    </RelativeLayout>
+</RelativeLayout>

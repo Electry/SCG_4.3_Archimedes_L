@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.front.FrontView android:id="@id/frontcameraview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/cameraswitchtoback" android:background="@drawable/camera_switchtofront_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/camera_switchtofront" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/photofunction" android:background="@drawable/camera_switchtofront_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/camera_photofunction" android:layout_toLeftOf="@id/cameraswitchtoback" android:layout_alignParentTop="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/frontwater" android:background="@drawable/camera_switchtofront_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:src="@drawable/camera_water_off" android:layout_centerHorizontal="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/frontsetting" android:background="@drawable/camera_switchtofront_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/camera_frontsetting" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/beauty" android:background="@drawable/camera_switchtofront_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="30.0dip" android:src="@drawable/camera_beauty_off" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/functiontip3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="75.0dip" android:layout_marginBottom="50.0dip" android:layout_alignParentBottom="true">
+        <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/touchtip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/touchtip"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/voicetip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/voicetip"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/blinktip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/blinktip"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/gesturetip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gesturetip"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+    <TableLayout android:id="@id/functiontip4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="85.0dip" android:layout_marginBottom="40.0dip" android:layout_alignParentBottom="true">
+        <TableRow android:layout_marginBottom="5.0dip">
+            <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/touchtip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/touchtip"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/voicetip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voicetip"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </TableRow>
+        <TableRow>
+            <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/blinktip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/blinktip"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/gesturetip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gesturetip"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </TableRow>
+    </TableLayout>
+    <RelativeLayout android:id="@id/bar" android:background="@drawable/camera_facebeauty_bar_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/camera_front_beauty_bar_margin_right" android:layout_marginBottom="110.0dip" android:layout_alignParentBottom="true">
+        <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:src="@drawable/camera_facebeauty_bar_1" android:layout_centerVertical="true" android:contentDescription="@string/nothing"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <SeekBar android:id="@id/seekbar" android:layout_width="255.0dip" android:layout_height="wrap_content" android:layout_marginLeft="-18.0dip" android:maxHeight="4.0dip" android:max="6" android:secondaryProgress="0" android:progressDrawable="@drawable/camera_setting_effect_seekbar_back_camera_style" android:minHeight="4.0dip" android:thumb="@drawable/adjust_slider_bg" android:thumbOffset="17.0dip" android:layout_toRightOf="@id/one" android:layout_centerVertical="true" />
+        <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/seven" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-18.5dip" android:src="@drawable/camera_facebeauty_bar_7" android:layout_toRightOf="@id/seekbar" android:layout_centerVertical="true" android:contentDescription="@string/nothing"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <ImageButton android:id="@id/arrow" android:background="@drawable/camera_facebeautybar_left_arrow_selector" android:layout_width="@dimen/camera_front_beauty_bar_arrow_width" android:layout_height="@dimen/camera_front_beauty_bar_arrow_width" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/nothing" />
+    </RelativeLayout>
+    <ImageView android:id="@id/seekbar_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginBottom="154.0dip" android:src="@drawable/camera_facebeauty_bar_indicator_5" android:layout_alignParentBottom="true" android:contentDescription="@string/nothing" />
+</com.lenovo.scg.camera.front.FrontView>

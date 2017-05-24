@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="bottom" android:layout_width="295.29688dip" android:layout_height="64.0dip" android:layout_marginLeft="32.299988dip" android:layout_marginBottom="125.29999dip" android:src="@drawable/camera_front_water_smile_0to19" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="189.6dip" android:layout_marginBottom="128.6dip">
+        <ImageView android:id="@id/camera_front_water_smile_0to19_rate_1" android:layout_width="6.299988dip" android:layout_height="8.599976dip" android:src="@drawable/camera_front_water_rate_0" />
+        <ImageView android:id="@id/camera_front_water_smile_0to19_rate_2" android:layout_width="6.299988dip" android:layout_height="8.599976dip" android:src="@drawable/camera_front_water_rate_0" android:layout_toRightOf="@id/camera_front_water_smile_0to19_rate_1" />
+        <ImageView android:layout_width="10.0dip" android:layout_height="8.599976dip" android:src="@drawable/camera_front_water_rate" android:layout_toRightOf="@id/camera_front_water_smile_0to19_rate_2" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/ivAppIcon" android:layout_width="54.0dip" android:layout_height="54.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="?defaultTextColor" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/tvVersionInfo" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:lineSpacingExtra="8.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="?defaultTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/SUS_UPDATEDESC" />
+            <TextView android:textSize="16.0sp" android:textColor="?defaultTextColor" android:id="@id/tvDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="false" />
+        </LinearLayout>
+    </ScrollView>
+    <CheckBox android:textSize="16.0sp" android:textColor="?defaultTextColor" android:id="@id/cbNewVersionPrompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/SUS_SETTINGS_NEWVERPROMPT" android:alpha="0.6" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/more_items_container" android:background="@drawable/cosmetology_more_pop_bg" android:visibility="gone" android:layout_width="153.0dip" android:layout_height="wrap_content" android:layout_marginTop="52.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/used_as_views" android:background="@drawable/gallery_views_bg" android:layout_width="fill_parent" android:layout_height="53.299988dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/use_as_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:src="@drawable/gallery_more_used_as_button_bg" />
+        <TextView android:textSize="20.0dip" android:textColor="@drawable/photo_text_bg" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/use_ad_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/used_as" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/slid_show_views" android:background="@drawable/gallery_views_bg" android:layout_width="fill_parent" android:layout_height="53.299988dip" android:layout_below="@id/used_as_views" android:layout_alignParentLeft="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/slid_show_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:src="@drawable/gallery_more_slide_show_button_bg" />
+        <TextView android:textSize="20.0dip" android:textColor="@drawable/photo_text_bg" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/slid_show_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/slid_show" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/photo_details_views" android:background="@drawable/gallery_views_bg" android:layout_width="fill_parent" android:layout_height="53.299988dip" android:layout_below="@id/slid_show_views" android:layout_alignParentLeft="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/photo_details_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:src="@drawable/gallery_more_details_button_bg" />
+        <TextView android:textSize="20.0dip" android:textColor="@drawable/photo_text_bg" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/photo_details_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/photo_details" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

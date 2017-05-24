@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_view" android:background="?titleBarBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fbActionBar" layout="@layout/fb_actionbar" />
+    <View android:id="@id/fbActionBarDivider" android:background="?fbLineColor" android:layout_width="fill_parent" android:layout_height="@dimen/fb_divider_size" />
+    <ListView android:id="@id/moduleListView" android:scrollbars="none" android:fadingEdgeLength="0.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="?fbListItemSelector" android:cacheColorHint="@android:color/transparent" android:divider="?fbListViewLineColor" android:dividerHeight="@dimen/fb_divider_size" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/bottom_lyt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/fb_bottom_btn_height">
+        <View android:background="?fbLineColor" android:layout_width="fill_parent" android:layout_height="@dimen/fb_divider_size" />
+        <Button android:textSize="@dimen/feedback_text_size_18" android:textColor="?submitBtnTextColor" android:gravity="center" android:id="@id/fb_fragment_reallogbt" android:background="?submitBtnBackgroundColor" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/fb_bug_real" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

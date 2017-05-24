@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.shortcut.ShortcutView android:id="@id/proShortcut" android:paddingTop="8.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/smallbg" android:background="@drawable/camera_shortcut_small_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:contentDescription="@string/nothing" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/shortcutpanel" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/shortcutpanelinner" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/reset" android:background="@drawable/camera_shortcut_reset_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_shortcut_reset" android:contentDescription="@string/nothing" />
+                <com.lenovo.scg.camera.ui.RotateLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.0dip" lenovo:orientation="270"
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:lenovo="http://schemas.android.com/apk/res/com.lenovo.scg">
+                    <GridView android:id="@id/gridview" android:background="@drawable/shortcut_bg" android:paddingLeft="1.0dip" android:paddingTop="2.0dip" android:paddingRight="1.0dip" android:paddingBottom="1.0dip" android:layout_width="390.0dip" android:layout_height="231.6dip" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:stretchMode="columnWidth" android:columnWidth="@dimen/shortcut_item_width" android:numColumns="5"
+                      xmlns:android="http://schemas.android.com/apk/res/android" />
+                </com.lenovo.scg.camera.ui.RotateLayout>
+            </LinearLayout>
+            <ImageView android:background="#ff25c6ff" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginLeft="-2.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:contentDescription="@string/nothing" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/arrow0" android:background="@drawable/blue_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="85.0dip" android:contentDescription="@string/nothing" />
+            <ImageView android:id="@id/arrow1" android:background="@drawable/blue_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="147.0dip" android:contentDescription="@string/nothing" />
+            <ImageView android:id="@id/arrow2" android:background="@drawable/blue_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="210.0dip" android:contentDescription="@string/nothing" />
+            <ImageView android:id="@id/arrow3" android:background="@drawable/blue_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="275.0dip" android:contentDescription="@string/nothing" />
+            <ImageView android:id="@id/arrow4" android:background="@drawable/blue_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="335.0dip" android:contentDescription="@string/nothing" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/statusbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip">
+            <ImageView android:background="@drawable/camera_switchtofront_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:contentDescription="@string/nothing" />
+            <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/statusbarshort0" android:background="@drawable/camera_switchtofront_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/statusbarshort1" android:background="@drawable/camera_switchtofront_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/statusbarshort2" android:background="@drawable/camera_switchtofront_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/statusbarshort3" android:background="@drawable/camera_switchtofront_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/statusbarshort4" android:background="@drawable/camera_switchtofront_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <ImageButton android:id="@id/arrow" android:background="@drawable/camera_switchtofront_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:contentDescription="@string/nothing" />
+            <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/hint1" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="1.0dip" android:contentDescription="@string/nothing"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/hint2" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginBottom="1.0dip" android:contentDescription="@string/nothing"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/hint3" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginBottom="1.0dip" android:contentDescription="@string/nothing"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/hint4" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="21.0dip" android:contentDescription="@string/nothing"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+    </LinearLayout>
+</com.lenovo.scg.camera.shortcut.ShortcutView>

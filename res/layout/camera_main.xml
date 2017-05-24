@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/camera_main_content" android:drawingCacheQuality="low" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/gl_root_group" />
+    <FrameLayout android:id="@id/camera_app_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/camera_control" />
+    <FrameLayout android:id="@id/gl_le3d_frame_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

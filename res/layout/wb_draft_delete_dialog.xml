@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ff252525" android:layout_width="316.66406dip" android:layout_height="215.33298dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/llDraftDelSingle" android:background="@drawable/rotate_delete_dialog_cancel_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="83.33298dip">
+        <TextView android:textSize="20.0dip" android:textColor="#ffc0c0c0" android:layout_gravity="center_vertical" android:id="@id/tvDelDraftSingle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.666992dip" android:text="@string/sDelDraftSingle" />
+    </LinearLayout>
+    <ImageView android:id="@id/wb_change_divide2" android:background="#ff585858" android:layout_width="fill_parent" android:layout_height="0.70000005dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/llDraftDelAll" android:background="@drawable/rotate_delete_dialog_cancel_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="83.33298dip">
+        <TextView android:textSize="20.0dip" android:textColor="#ffc0c0c0" android:layout_gravity="center_vertical" android:id="@id/tvDelDraftAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.666992dip" android:text="@string/sDelDraftAll" />
+    </LinearLayout>
+    <ImageView android:id="@id/wb_change_divide3" android:background="#ff585858" android:layout_width="fill_parent" android:layout_height="0.70000005dip" />
+    <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvDraftDelCancel" android:background="@drawable/rotate_delete_dialog_cancel_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="@string/SUS_CANCELBUTTON" />
+</LinearLayout>

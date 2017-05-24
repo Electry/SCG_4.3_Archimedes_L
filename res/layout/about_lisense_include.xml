@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/pscenter_setting_text_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/null_r_n" />
+    <TextView android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_powered" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_powered_by" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_lega" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_lega_version" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_leimage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_leimage_version" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_lecsc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_lecsc_version" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_lescf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_lescf_version" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_copright_scgteam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_copyright_scgteam" />
+    <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <TextView android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_open_lib" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_opencv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/opencv_2_4_3" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_opencv_cporight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_opencv" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_libjpeg_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/libjpeg_turbo_1_2_1" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_libjpeg_copright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_libjpeg" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_giflib_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gif_lib_4_1_6" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_gitlib_copright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gif_lib_copright" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_neven_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/neven_name" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_neven_copright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_neven_version" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_skia_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skia_name" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/about_skia_copright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_skia_version" />
+</LinearLayout>

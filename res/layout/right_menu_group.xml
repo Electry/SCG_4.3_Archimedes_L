@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rlRightMenuGroup" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="top" android:id="@id/rlLocal" android:background="@drawable/more_popup_bg4" android:visibility="gone" android:layout_width="@dimen/sg_menu_bg_right_width" android:layout_height="@dimen/sg_menu_bg_right_height" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/rlTimeGroup" android:background="@drawable/main_llcategory_text_bg_selector" android:clickable="true" android:layout_width="178.0dip" android:layout_height="53.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip">
+            <ImageView android:id="@id/imgItemTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:src="@drawable/photo_ic_time_selector" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/sg_text_size_20" android:textColor="@drawable/right_menu_group_text_selector" android:id="@id/textItemTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/times" android:layout_toRightOf="@id/imgItemTime" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rlFolderGroup" android:background="@drawable/main_llcategory_text_bg_selector" android:visibility="gone" android:clickable="true" android:layout_width="178.0dip" android:layout_height="53.0dip" android:layout_below="@id/rlTimeGroup" android:layout_alignLeft="@id/rlTimeGroup">
+            <ImageView android:id="@id/imgItemFolder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:src="@drawable/photo_ic_folder_selector" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/sg_text_size_20" android:textColor="@drawable/right_menu_group_text_selector" android:id="@id/textItemFolder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sg_margin_8" android:text="@string/sFolder" android:layout_toRightOf="@id/imgItemFolder" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlWeiboGroup" android:background="@drawable/more_popup_bg4" android:visibility="gone" android:layout_width="@dimen/sg_menu_bg_right_width" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ListView android:id="@id/lvGroups" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlGalleryWallGroup" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="420.0dip">
+        <Button android:textSize="12.0dip" android:id="@id/btnHotMenu" android:background="@drawable/btn_bg_menu" android:layout_width="40.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:text="@string/sHot" android:layout_alignParentRight="true" />
+        <Button android:textSize="12.0dip" android:id="@id/btnFondofMenu" android:background="@drawable/btn_bg_menu" android:layout_width="40.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:text="@string/sFondof" android:layout_toLeftOf="@id/btnHotMenu" android:layout_below="@id/btnHotMenu" />
+        <Button android:textSize="12.0dip" android:id="@id/btnFavoriteMenu" android:background="@drawable/btn_bg_menu" android:layout_width="50.0dip" android:layout_height="24.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:text="@string/sFavorite" android:layout_toLeftOf="@id/btnFondofMenu" android:layout_below="@id/btnFondofMenu" />
+        <Button android:textSize="12.0dip" android:id="@id/btnDynamicMenu" android:background="@drawable/btn_bg_menu" android:layout_width="40.0dip" android:layout_height="24.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:text="@string/sDynamic" android:layout_toLeftOf="@id/btnFavoriteMenu" android:layout_below="@id/btnFavoriteMenu" />
+    </RelativeLayout>
+</RelativeLayout>

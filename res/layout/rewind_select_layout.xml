@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.ui.RotateLayout android:id="@id/rewind_select_layout_rotate" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/camera_rewind_select_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="#80000000" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/camera_rewind_select_scroll_height" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/rewind_select_scrollview_bg" android:background="#19ffffff" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="#daffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+                <View android:background="#daffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+            </RelativeLayout>
+            <HorizontalScrollView android:id="@id/rewind_select_scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="horizontal" android:id="@id/scroll_views_root" android:paddingLeft="@dimen/camera_rewind_select_item_margin" android:paddingRight="@dimen/camera_rewind_select_item_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/rewind_select_anim_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</com.lenovo.scg.camera.ui.RotateLayout>

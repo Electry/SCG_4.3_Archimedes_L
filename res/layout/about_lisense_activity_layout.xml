@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/about_page_layout_top" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/about_top_layout" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:gravity="center_vertical" android:id="@id/about_button" android:background="@drawable/pscenter_setting_item_selector" android:padding="10.0dip" android:clickable="true" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/pscenter_setting_back_selector" android:contentDescription="@null" />
+        <TextView android:textSize="21.0sp" android:textColor="@color/pscenter_setting_text_selector" android:gravity="center_vertical" android:id="@id/about_page_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/gallery_about_other_version_new" />
+    </LinearLayout>
+    <View android:enabled="false" android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ScrollView android:id="@id/about_scollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" layout="@layout/about_lisense_include" />
+    </ScrollView>
+</LinearLayout>

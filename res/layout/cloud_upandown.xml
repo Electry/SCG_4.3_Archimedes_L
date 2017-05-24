@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/cloud_detail_box" android:background="@drawable/cloud_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@drawable/cloud_actionbar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:splitMotionEvents="false">
+            <ImageView android:id="@id/cloud_detail_back" android:background="@drawable/cloud_btn_bg" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cloud_actionbar_back" android:layout_alignParentLeft="true" />
+            <ImageView android:background="@drawable/cloud_head_line" android:layout_width="0.70000005dip" android:layout_height="26.699982dip" android:layout_toRightOf="@id/cloud_detail_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:id="@id/cloud_detail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sCloud_upandown_title" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.lenovo.scg.gallery3d.cloudalbum.view.CircleProgress android:layout_gravity="center_horizontal" android:id="@id/cloud_detail_progress" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_marginTop="30.0dip" />
+        <TextView android:textSize="12.799988sp" android:textColor="#ffcc3333" android:gravity="center_horizontal" android:id="@id/cloud_detail_hint" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/sCloud_upandown_hint" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.799988sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/cloud_detail_current_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/cloud_detail_current" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+            <ImageView android:background="@drawable/cloud_head_line" android:layout_width="0.70000005dip" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.799988sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/cloud_detail_total_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sCloud_upandown_total_num" />
+                <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/cloud_detail_total" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+            <ImageView android:background="@drawable/cloud_head_line" android:layout_width="0.70000005dip" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.799988sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/cloud_detail_unit" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/cloud_detail_current_size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/cloud_detail_total_size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <Button android:textSize="18.599976sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/cloud_detail_again" android:background="@drawable/cloud_upandown_btn_bg" android:padding="6.799988dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:textSize="18.599976sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/cloud_detail_cancel" android:background="@drawable/cloud_upandown_btn_bg" android:padding="6.799988dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sCloud_upandown_hint_cancel" android:layout_weight="1.0" />
+            <ImageView android:id="@id/cloud_detail_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cloud_upandown_logo" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/cloud_dialog_box" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/cloud_dialog_bare" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/cloud_dialog_back" android:clickable="true" android:layout_width="71.69998dip" android:layout_height="@dimen/cloud_actionbar_header_height" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/cloud_dialog_domain" android:background="@drawable/cloud_popup_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingRight="5.1999817dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="16.799988sp" android:textColor="#ffffffff" android:id="@id/cloud_dialog_domain_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.699982dip" android:layout_marginTop="13.799988dip" android:text="@string/cloud_downloading_hint" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.699982dip" android:layout_marginTop="2.7999878dip" android:layout_marginBottom="25.799988dip">
+                    <ProgressBar android:id="@id/cloud_dialog_domain_progress" android:layout_width="0.0dip" android:layout_height="3.5dip" android:layout_marginRight="2.7999878dip" android:indeterminateOnly="false" android:progressDrawable="@drawable/cloud_pop_progressbar_style" android:layout_weight="1.0" style="?android:attr/progressBarStyleHorizontal" />
+                    <TextView android:textSize="18.0sp" android:textColor="#ff0093d0" android:gravity="right" android:id="@id/cloud_dialog_domain_finished" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="18.0sp" android:textColor="#ff072733" android:gravity="left" android:id="@id/cloud_dialog_domain_total" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/cloud_dialog_domain_cancel" android:background="@drawable/cloud_pop_item_bg" android:layout_width="80.0dip" android:layout_height="fill_parent" android:text="@string/cloud_downloading_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

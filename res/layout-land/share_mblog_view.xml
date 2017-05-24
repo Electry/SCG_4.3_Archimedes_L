@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlTitle" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/btnClose" android:background="@drawable/btn_bg" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="8.0dip" android:text="@string/close" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <Button android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/btnSend" android:background="@drawable/btn_bg" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <EditText android:gravity="center|left|top" android:id="@id/etEdit" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="100.0pt" android:layout_marginLeft="13.0px" android:layout_marginRight="13.0px" android:singleLine="false" android:capitalize="sentences" android:isScrollContainer="true" android:imeOptions="actionDone" />
+    <LinearLayout android:gravity="right" android:id="@id/ll_text_limit_unit" android:background="#ffffffff" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0px" android:layout_marginRight="13.0px" android:layout_alignParentRight="true" android:layout_alignParentBottom="false" android:layout_centerVertical="true">
+        <TextView android:textColor="#ff333333" android:id="@id/tv_text_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0px" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_delwords" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llImage" android:background="#efffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0px" android:layout_marginRight="13.0px">
+        <ImageView android:id="@id/ivImage" android:background="@drawable/image_background" android:layout_width="30.0pt" android:layout_height="30.0pt" android:layout_margin="8.0dip" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/at_weibo_user" android:layout_width="18.0pt" android:layout_height="18.0pt" android:layout_margin="3.0dip" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/topic_weibo_user" android:layout_width="18.0pt" android:layout_height="18.0pt" android:layout_margin="3.0dip" />
+    </LinearLayout>
+</LinearLayout>

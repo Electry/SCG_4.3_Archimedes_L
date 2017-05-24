@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/light_rotate_alertdialog_root_layout" android:background="#e5000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.scg.camera.ui.RotateLayout android:gravity="center" android:layout_gravity="center" android:id="@id/light_rotate_alertdialog_layout_id" android:layout_width="322.0dip" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/popup_background" android:layout_width="322.0dip" android:layout_height="wrap_content">
+            <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:textSize="20.0sp" android:id="@id/dev_title" android:background="#ff333333" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/camera_setting_developer" android:layout_centerInParent="true" />
+                <View android:layout_width="fill_parent" android:layout_height="0.3333dip" android:layout_below="@id/dev_title" />
+            </RelativeLayout>
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:layout_width="322.0dip" android:layout_height="wrap_content" layout="@layout/light_rotate_dialog_message" />
+            </ScrollView>
+        </LinearLayout>
+    </com.lenovo.scg.camera.ui.RotateLayout>
+</RelativeLayout>

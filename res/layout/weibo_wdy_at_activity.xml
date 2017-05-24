@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff232323" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/sharecenter_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textColor="#76ffffff" android:gravity="center" android:id="@id/sc_sina_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sharecenter_sina_weibo" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ff232323" android:paddingTop="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <EditText android:textColor="#ff000000" android:gravity="center|left" android:id="@id/sc_search_input" android:background="#ff5a5a5a" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:hint="@string/sharecenter_at_search_hint" android:singleLine="true" android:layout_centerInParent="true" android:textCursorDrawable="@null" />
+            <ImageView android:id="@id/sharecenter_at_page_searchicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/sharecenter_search_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/sharecenter_tab_text_selector" android:id="@id/sc_recently_at" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sharecenter_recently_at_people" />
+                <ImageView android:id="@id/sc_recently_at_bottom_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sharecenter_at_tab" android:contentDescription="@null" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <TextView android:textColor="@color/sharecenter_tab_text_selector" android:id="@id/sc_attention_people" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sharecenter_attention_people" />
+                <ImageView android:id="@id/sc_attention_people_bottom_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sharecenter_at_tab" android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:background="#ff177d97" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:contentDescription="@null" />
+        <com.lenovo.scg.gallery3d.sharecenter.RefreshableListView android:scrollbarStyle="outsideOverlay" android:id="@id/sc_content_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:listSelector="@drawable/pscenter_setting_item_selector" android:divider="@drawable/pscenter_setting_gray_line" android:layout_weight="1.0" />
+        <TextView android:textColor="#ff000000" android:gravity="center" android:id="@id/emptyview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="@string/sharecenter_no_recently_at_people" android:layout_weight="1.0" />
+        <ImageView android:background="#ff177d97" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:contentDescription="@null" />
+        <Button android:textSize="20.0sp" android:textColor="#76ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/sc_ok_btn" android:background="@drawable/pscenter_setting_item_selector" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:text="@string/sharecenter_confirm" />
+    </LinearLayout>
+</LinearLayout>

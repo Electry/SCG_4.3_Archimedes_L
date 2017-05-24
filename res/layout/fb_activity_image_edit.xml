@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/image_edit_root_layout" android:background="?titleBarBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fbActionBar" layout="@layout/fb_actionbar" />
+    <View android:id="@id/fbActionBarDivider" android:background="?fbLineColor" android:layout_width="fill_parent" android:layout_height="@dimen/fb_divider_size" android:layout_below="@id/fbActionBar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottomLyt" android:layout_width="fill_parent" android:layout_height="@dimen/fb_bottom_btn_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <View android:background="?fbLineColor" android:layout_width="fill_parent" android:layout_height="@dimen/fb_divider_size" />
+        <Button android:textSize="@dimen/feedback_text_size_18" android:textColor="?submitBtnTextColor" android:gravity="center" android:id="@id/btn_ok" android:background="?submitBtnBackgroundColor" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/fb_sure" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottomLyt" android:layout_below="@id/actionBarLine">
+        <com.lenovo.scg.gallery3d.about.feedback.editimage.EditableImageView android:id="@id/image_edit_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fb_def_image" android:adjustViewBounds="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/firstenterfrontspec" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/front_spec_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginRight="70.0dip" android:layout_alignParentRight="true" android:contentDescription="@string/nothing" />
+    <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/text_h" android:background="@drawable/front_spec_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:layout_marginTop="120.0dip" android:text="@string/camera_first_enter_front_spec" />
+    <com.lenovo.scg.camera.ui.RotateLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_marginRight="90.0dip" android:layout_alignParentRight="true" lenovo:orientation="270"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:lenovo="http://schemas.android.com/apk/res/com.lenovo.scg">
+        <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/text_v" android:background="@drawable/front_spec_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="310.0dip" android:text="@string/camera_first_enter_front_spec" />
+    </com.lenovo.scg.camera.ui.RotateLayout>
+</RelativeLayout>

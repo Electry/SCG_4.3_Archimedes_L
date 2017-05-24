@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/personcenter_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/llUnloginBkg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="#ff6c6c6c" android:id="@id/personcenter_cloud_unlogin_login_btn_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cloud_unlogin_text_hint" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/personcenter_cloud_unlogin_login_btn" android:background="@drawable/personcenter_cloud_unlogin_login_btn_selector" android:clickable="true" android:layout_width="220.0dip" android:layout_height="46.0dip" android:layout_marginTop="22.0dip" android:layout_marginBottom="132.0dip" android:text="@string/cloud_login_text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/personcenter_options_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:id="@id/personcenter_cloud_unlogin_draft_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/personcenter_text_selector" android:id="@id/personcenter_cloud_unlogin_draft" android:paddingTop="12.0dip" android:paddingBottom="14.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sWbDraft" android:drawableTop="@drawable/personcenter_cloud_draft_selector" android:drawablePadding="5.0dip" />
+                <TextView android:textSize="13.299988dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/personcenter_cloud_unlogin_draft_hint" android:background="@drawable/personcenter_match_with_goldbox_draft_hint" android:layout_width="28.0dip" android:layout_height="20.0dip" android:layout_marginTop="12.0dip" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/personcenter_text_selector" android:gravity="center" android:id="@id/personcenter_cloud_unlogin_setting" android:paddingTop="12.0dip" android:paddingBottom="14.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/pscenter_setting" android:drawableTop="@drawable/personcenter_cloud_setting_selector" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/personcenter_text_selector" android:gravity="center" android:id="@id/personcenter_cloud_unlogin_about" android:paddingTop="12.0dip" android:paddingBottom="14.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/pscenter_setting_about" android:drawableTop="@drawable/personcenter_cloud_about_selector" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

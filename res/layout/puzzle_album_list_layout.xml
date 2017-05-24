@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff252525" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/share_center_title_layout" android:background="#ff252525" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:id="@id/sharecenter_back_layout" android:background="@drawable/puzzle_item_selector" android:padding="12.0dip" android:clickable="true" android:layout_width="52.0dip" android:layout_height="fill_parent" android:src="@drawable/puzzle_back_selector" android:contentDescription="@null" />
+        <TextView android:textSize="21.0sp" android:textColor="@color/puzzle_text_selector" android:ellipsize="end" android:gravity="center" android:id="@id/album_title" android:layout_width="250.0dip" android:layout_height="fill_parent" android:text="@string/puzzle_select_album" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/start" android:background="@drawable/puzzle_item_selector" android:padding="12.0dip" android:clickable="true" android:layout_width="52.0dip" android:layout_height="fill_parent" android:src="@drawable/puzzle_ok_selector" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <View android:background="#ff363636" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <ListView android:id="@id/album_list" android:background="#ff191919" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/puzzle_item_selector" android:divider="#ff303030" android:dividerHeight="1.0dip" />
+        <GridView android:id="@id/album_grid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="1.2999878dip" android:verticalSpacing="1.2999878dip" android:stretchMode="columnWidth" android:numColumns="4" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/selected_layout" android:background="@color/puzzle_top_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ff363636" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/puzzle_text_selector" android:gravity="center_horizontal" android:id="@id/select_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/puzzle_select_count_string" />
+        <com.lenovo.scg.photos.views.SelectedPhotoView android:id="@id/select_photo_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

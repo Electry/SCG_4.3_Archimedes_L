@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/request_single_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/box_control_request_single" />
+    <Button android:id="@id/request_multi_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/box_control_request_multi" />
+    <TextView android:id="@id/uris_textview_id" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <GridView android:id="@id/get_pics_id" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
+</LinearLayout>

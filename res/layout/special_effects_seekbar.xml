@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.scg.gallery3d.facepretty.views.SCGSeekBar android:id="@id/regulate_effect_seekbar" android:layout_width="246.69998dip" android:layout_height="wrap_content" android:progressDrawable="@drawable/specialeffect_seekbar_style" android:thumb="@drawable/seek_bar_thumb_selector" />
+</LinearLayout>

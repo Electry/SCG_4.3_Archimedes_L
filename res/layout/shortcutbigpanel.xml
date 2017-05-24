@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.shortcut.ShortcutBigPanel android:orientation="horizontal" android:id="@id/ShortcutBigPanel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.scg.camera.ui.RotateLayout android:id="@id/shortcutbigpanelcontainer" android:layout_width="wrap_content" android:layout_height="wrap_content" lenovo:orientation="270"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:lenovo="http://schemas.android.com/apk/res/com.lenovo.scg">
+        <ListView android:id="@id/shortcutlist1" android:background="@drawable/shortcutitembg" android:layout_width="@dimen/camera_shortcut_list_width_row" android:layout_height="wrap_content" android:listSelector="@drawable/shortcutitemselect_selector" android:divider="@color/white2" android:dividerHeight="1.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </com.lenovo.scg.camera.ui.RotateLayout>
+    <ImageView android:background="#ff25c6ff" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginLeft="-1.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:contentDescription="@string/nothing" />
+</com.lenovo.scg.camera.shortcut.ShortcutBigPanel>

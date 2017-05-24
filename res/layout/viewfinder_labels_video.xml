@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/video_mode_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.lenovo.scg">
+    <RelativeLayout android:id="@id/progress_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="540.0dip" android:layout_alignParentBottom="true">
+        <ProgressBar android:id="@id/video_recording_progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="13.332977dip" android:progressDrawable="@drawable/video_recording_progressbar" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal" />
+        <RelativeLayout android:id="@id/progress_time_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/video_recording_progressbar">
+            <com.lenovo.scg.camera.ui.RotateLayout android:id="@id/video_eslaping_time_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+              xmlns:app="http://schemas.android.com/apk/res/com.lenovo.scg">
+                <TextView android:textSize="13.0sp" android:textColor="@color/video_progress_bar_progressed" android:id="@id/video_eslaping_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </com.lenovo.scg.camera.ui.RotateLayout>
+            <com.lenovo.scg.camera.ui.RotateLayout android:id="@id/video_final_time_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"
+              xmlns:app="http://schemas.android.com/apk/res/com.lenovo.scg">
+                <TextView android:textSize="13.0sp" android:textColor="@color/video_progress_bar_backgroud" android:id="@id/video_final_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </com.lenovo.scg.camera.ui.RotateLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.lenovo.scg.camera.ui.RotateLayout android:id="@id/video_recording_time_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.332977dip" android:layout_marginTop="20.0dip"
+      xmlns:app="http://schemas.android.com/apk/res/com.lenovo.scg">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="33.333282sp" android:textColor="#ffffffff" android:id="@id/recording_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_recording_indicator" android:drawablePadding="6.666992dip" />
+            <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@id/speical_video_indicator_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/slow_video_indicator" android:drawablePadding="11.333282dip" />
+        </LinearLayout>
+    </com.lenovo.scg.camera.ui.RotateLayout>
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/video_mode_flash" android:background="@drawable/camera_switchtofront_bg_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/camera_shortcut_flash_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/video_mode_live" android:background="@drawable/camera_switchtofront_bg_selector" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.332977dip" android:layout_marginRight="7.0dip" android:src="@drawable/video_mode_live_btn" android:layout_below="@id/video_mode_flash" android:layout_alignParentRight="true" />
+    <SurfaceView android:id="@id/live_surfaceview_frontcamera" android:visibility="gone" android:fitsSystemWindows="false" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/live_front_preivew" android:visibility="gone" android:layout_width="@dimen/best_live_surfaceview_height" android:layout_height="@dimen/best_live_surfaceview_width" android:layout_marginTop="@dimen/best_live_surfaceview_left_margin" android:layout_marginRight="@dimen/best_live_surfaceview_top_margin" android:layout_alignParentRight="true" android:contentDescription="@string/nothing" />
+</RelativeLayout>

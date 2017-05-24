@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/fb_listenitem_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/newImgView" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fb__not_read_icon_margin" android:src="@drawable/fb_not_read" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/fb_activity_horizontal_margin" android:paddingRight="@dimen/fb_activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="@dimen/fb_listenitem_height">
+        <TextView android:textSize="@dimen/feedback_text_size_16" android:textColor="?fbListItemTextColor" android:id="@id/feedback_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/fb_myfeedback_texttime_size" android:textColor="?fbListItemTextTimeColor" android:layout_gravity="center|right" android:id="@id/feedback_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

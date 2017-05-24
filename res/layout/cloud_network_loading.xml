@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/network_loading_view" android:background="@color/cloud_loading_dialog_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/loading_bar" android:layout_width="@dimen/cloud_loading_bar_width" android:layout_height="@dimen/cloud_loading_bar_height" android:indeterminateDrawable="@anim/cloud_anim_progress_wait" android:interpolator="@android:anim/cycle_interpolator" />
+    <TextView android:textSize="@dimen/cloud_loading_bar_text_size" android:textColor="@color/cloud_default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.299988dip" android:layout_marginTop="5.0dip" android:text="@string/scloud_loading_text" android:layout_toRightOf="@id/loading_bar" />
+</RelativeLayout>

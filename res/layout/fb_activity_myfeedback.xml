@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_view" android:background="?titleBarBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fbActionBar" layout="@layout/fb_actionbar" />
+    <View android:id="@id/fbActionBarDivider" android:background="?fbLineColor" android:layout_width="fill_parent" android:layout_height="@dimen/fb_divider_size" />
+    <TextView android:textSize="@dimen/feedback_text_size_12" android:textColor="?fbListEmptyTextTimeColor" android:gravity="center" android:id="@id/emptyTv" android:padding="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/fb_empty" />
+    <com.lenovo.scg.gallery3d.about.pulltorefresh.PullToRefreshView android:orientation="vertical" android:id="@id/pull_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/myFeedbackListView" android:focusable="true" android:focusableInTouchMode="false" android:scrollbars="none" android:fadingEdgeLength="0.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="?fbListItemSelector" android:cacheColorHint="@android:color/transparent" android:divider="?fbListViewLineColor" android:dividerHeight="@dimen/fb_divider_size">
+            <requestFocus />
+        </ListView>
+    </com.lenovo.scg.gallery3d.about.pulltorefresh.PullToRefreshView>
+</LinearLayout>

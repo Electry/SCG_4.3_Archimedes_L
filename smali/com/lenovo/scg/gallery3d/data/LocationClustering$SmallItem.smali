@@ -1,0 +1,45 @@
+.class Lcom/lenovo/scg/gallery3d/data/LocationClustering$SmallItem;
+.super Ljava/lang/Object;
+.source "LocationClustering.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/lenovo/scg/gallery3d/data/LocationClustering;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "SmallItem"
+.end annotation
+
+
+# instance fields
+.field lat:D
+
+.field lng:D
+
+.field path:Lcom/lenovo/scg/gallery3d/data/Path;
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 68
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/lenovo/scg/gallery3d/data/LocationClustering$1;)V
+    .locals 0
+    .param p1, "x0"    # Lcom/lenovo/scg/gallery3d/data/LocationClustering$1;
+
+    .prologue
+    .line 68
+    invoke-direct {p0}, Lcom/lenovo/scg/gallery3d/data/LocationClustering$SmallItem;-><init>()V
+
+    return-void
+.end method

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom|center" android:id="@id/pro_tutorial_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="95.0dip" android:layout_marginBottom="85.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pro_tutorial_indicator_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/pro_tutorial_arrow" android:paddingLeft="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pro_first_tutorial_left_arrow" android:rotation="90.0" />
+        <ImageView android:id="@id/pro_indiactor5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/circle_indicator" />
+        <ImageView android:id="@id/pro_indiactor4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/circle_indicator" />
+        <ImageView android:id="@id/pro_indiactor3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/circle_indicator" />
+        <ImageView android:id="@id/pro_indiactor2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/circle_indicator" />
+        <ImageView android:id="@id/pro_indiactor1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/circle_indicator" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/circle_indicator" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/circle_indicator" />
+    </LinearLayout>
+    <ImageView android:id="@id/pro_tutorail_hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-75.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/pro_tutorial_hand" android:rotation="90.0" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/pro_tutorial_info" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginLeft="-50.0dip" android:layout_marginTop="65.0dip" android:text="@string/pro_tutorial_detail" android:singleLine="true" android:rotation="90.0" />
+</RelativeLayout>

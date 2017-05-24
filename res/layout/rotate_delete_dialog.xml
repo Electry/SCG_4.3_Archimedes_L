@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@id/rotate_delete_dialog_root_layout" android:background="#d0000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.scg.camera.ui.RotateLayout android:gravity="center" android:layout_gravity="center" android:id="@id/rotate_delete_dialog_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/rotate_delete_dialog_parent_layout" android:background="@color/rotate_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/rotate_delete_dialog_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/rotate_details_dialog_text_color" android:gravity="center_vertical" android:id="@id/rotate_delete_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:minHeight="64.0dip" style="@android:style/TextAppearance.Holo.DialogWindowTitle" />
+                <View style="@style/PopupTitleSeparator" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rotate_delete_dialog_text_parent" android:layout_width="322.0dip" android:layout_height="83.0dip">
+                <TextView android:textSize="20.0dip" android:textColor="@color/rotate_details_dialog_text_color" android:gravity="center" android:id="@id/rotate_delete_dialog_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView android:background="@color/photo_rotate_dialog_divide_color" android:layout_width="fill_parent" android:layout_height="0.70000005dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rotate_delete_dialog_button_layout" android:layout_width="fill_parent" android:layout_height="55.69998dip" android:minHeight="48.0dip">
+                <TextView android:textSize="20.0dip" android:textColor="@color/rotate_details_dialog_text_color" android:gravity="center" android:id="@id/rotate_delete_dialog_button1" android:background="@drawable/rotate_delete_dialog_cancel_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:minHeight="48.0dip" android:maxLines="2" android:layout_weight="1.0" />
+                <ImageView android:background="@color/photo_rotate_dialog_divide_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.6999817dip" android:layout_marginBottom="6.6999817dip" />
+                <TextView android:textSize="20.0dip" android:textColor="@color/rotate_details_dialog_text_color" android:gravity="center" android:id="@id/rotate_delete_dialog_button2" android:background="@drawable/rotate_delete_dialog_ok_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:minHeight="48.0dip" android:maxLines="2" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.lenovo.scg.camera.ui.RotateLayout>
+</FrameLayout>

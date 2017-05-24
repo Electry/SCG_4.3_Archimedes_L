@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/share_popup_view_ll" android:background="#ffffffff" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff191919" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="74.0dip" android:text="@string/actionbar_share_select_mode" />
+    <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="3.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="108.0dip">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/share_to_qiezi_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/share_to_qiezi_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="77.0dip" android:src="@drawable/share_qiezi_icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff191919" android:id="@id/share_to_qiezi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="5.0dip" android:text="@string/actionbar_share_qiezi" android:layout_toRightOf="@id/share_to_qiezi_img" android:layout_alignTop="@id/share_to_qiezi_img" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff474747" android:id="@id/share_to_qiezi_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/actionbar_share_qiezi_description" android:layout_below="@id/share_to_qiezi_name" android:layout_alignLeft="@id/share_to_qiezi_name" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/share_to_cloud_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:src="@drawable/share_cloud_icon" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff191919" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/actionbar_share_cloud" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="3.0px" />
+    <HorizontalScrollView android:fitsSystemWindows="true" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="105.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/share_to_weixin_ll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="77.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/share_to_weixin_selector" android:scaleType="centerCrop" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff191919" android:gravity="center_horizontal" android:id="@id/share_to_weixin_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/actionbar_share_weixin" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/share_to_friendcircle_ll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="61.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/share_to_friendcircle_selector" android:scaleType="centerCrop" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff191919" android:gravity="center_horizontal" android:id="@id/share_to_friendcircle_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/actionbar_share_friend_circle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/share_to_weibo_ll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="61.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/share_to_weibo_selector" android:scaleType="centerCrop" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff191919" android:gravity="center_horizontal" android:id="@id/share_to_weibo_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/actionbar_share_sina_weibo" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/share_to_mms_ll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="61.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/share_to_mms_selector" android:scaleType="centerCrop" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff191919" android:gravity="center_horizontal" android:id="@id/share_to_mms_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/actionbar_share_mms" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/share_to_qqspace_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="61.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/share_qqspace_icon" android:scaleType="centerCrop" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff191919" android:gravity="center_horizontal" android:id="@id/share_to_qqspace_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/actionbar_share_qqspace" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/share_to_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="61.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/share_to_more_selector" android:scaleType="centerCrop" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff191919" android:gravity="center_horizontal" android:id="@id/share_to_more_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/actionbar_share_more" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <LinearLayout android:gravity="center" android:id="@id/share_to_cancel" android:background="@drawable/pscenter_setting_item_selector" android:layout_width="fill_parent" android:layout_height="73.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@drawable/share_more_close_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/actionbar_share_to_cancel" />
+    </LinearLayout>
+</LinearLayout>

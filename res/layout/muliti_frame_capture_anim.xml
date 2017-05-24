@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/muliti_frame_root" android:background="#ff000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/anim_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/shadow_image" android:background="@drawable/muliti_frame_capture_anim_shadow" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="3.2999878dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/camera_setting_view_layer_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/camera_setting_view_layer_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/camera_back_setting_button_id" android:background="@drawable/camera_setting_btn_bg" android:padding="@dimen/camera_back_setting_button_padding" android:visibility="gone" android:layout_width="@dimen/camera_back_setting_button_width" android:layout_height="@dimen/camera_back_setting_button_width" android:layout_marginLeft="@dimen/camera_setting_button_margin_left" android:layout_marginTop="@dimen/camera_setting_button_margin_top" android:src="@drawable/camera_auto_setting_btn" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/camera_setting_view_layer_top" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

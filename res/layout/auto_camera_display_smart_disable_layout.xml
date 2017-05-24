@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/auto_camera_display_smart_disable_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="88.69998dip" android:layout_marginRight="24.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.lenovo.scg">
+    <com.lenovo.scg.gallery3d.weibo.ui.ImageViewSafe android:id="@id/smart_icon_gray" android:background="@drawable/auto_camera_display_disable_smart" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <TextView android:textSize="10.0dip" android:textColor="@color/auto_camera_display_text_color" android:id="@id/smart_text_gray" android:visibility="visible" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="2.0dip" android:text="@string/change_function_anim_smart_text" android:layout_below="@id/smart_icon_gray" android:layout_alignParentRight="true" android:rotation="90.0" />
+</RelativeLayout>

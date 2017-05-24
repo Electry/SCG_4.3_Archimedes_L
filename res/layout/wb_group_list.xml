@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlGroupList" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlLocal" android:layout_width="195.33298dip" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.lenovo.scg.gallery3d.weibo.ui.ListViewGroup android:id="@id/lvGroups" android:background="@drawable/bg" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="110.0dip" android:listSelector="@android:color/transparent" android:divider="@null" />
+    </RelativeLayout>
+</RelativeLayout>

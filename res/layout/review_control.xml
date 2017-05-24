@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/btn_done" android:background="@drawable/camera_switchtofront_bg_selector" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="62.669983dip" android:layout_marginBottom="32.669983dip" android:src="@drawable/ic_menu_save" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:onClick="onReviewDoneClicked" />
+    <ImageView android:id="@id/btn_retake" android:background="@drawable/camera_switchtofront_bg_selector" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="62.669983dip" android:layout_marginBottom="32.669983dip" android:src="@drawable/ic_menu_retake" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:onClick="onReviewRetakeClicked" />
+</RelativeLayout>

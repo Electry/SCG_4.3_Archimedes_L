@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.mode.ui.Panorama2DLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/previewbar_indictorarrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="62.0dip" android:src="@drawable/camera_panorama_indictorarrow" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/previewbar_zone" android:layout_width="fill_parent" android:layout_height="85.0dip">
+        <ImageView android:layout_gravity="left" android:id="@id/previewbar_image" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/panorama_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="62.0dip" android:layout_marginRight="20.0dip" android:text="@string/camera_panorama_capture_hint" android:shadowColor="#ffffffff" android:shadowRadius="3.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/arrow_anim_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.lenovo.scg.camera.mode.ui.Panorama2DLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.ui.RotateLayout android:id="@id/rewind_select_item_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" xmlns:RoundCornerImageView="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rewind_select_item_view" android:layout_width="@dimen/camera_rewind_select_frame_width" android:layout_height="@dimen/camera_rewind_select_frame_width">
+        <com.lenovo.scg.common.ui.RoundCornerImageView android:id="@id/rewind_select_item_image" android:layout_width="@dimen/camera_rewind_select_item_width" android:layout_height="@dimen/camera_rewind_select_item_width" android:scaleType="centerCrop" android:layout_centerInParent="true" RoundCornerImageView:xradius="2.6999817dip" RoundCornerImageView:yradius="2.6999817dip" />
+        <ImageView android:id="@id/rewind_select_item_frame" android:layout_width="@dimen/camera_rewind_select_frame_width" android:layout_height="@dimen/camera_rewind_select_frame_width" android:scaleType="fitCenter" />
+        <TextView android:textSize="10.699982dip" android:textColor="@color/common_view_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/rewind_select_item_text" android:layout_width="78.0dip" android:layout_height="18.0dip" android:layout_marginBottom="3.0dip" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</com.lenovo.scg.camera.ui.RotateLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/camera_setting_expandable_parent_press_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/camera_setting_expandable_parent_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/menu_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_item_list_margin" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/image" android:layout_width="@dimen/setting_item_list_margin" android:layout_height="@dimen/setting_item_list_margin" android:layout_marginRight="@dimen/setting_item_list_margin" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center|left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camera_setting_expandable_text_margin_left" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/camera_setting_expandable_parent_title_size" android:textColor="@color/camera_setting_expandable_menu_text_normal" android:ellipsize="marquee" android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="170.0dip" android:singleLine="true" />
+        <TextView android:textSize="@dimen/camera_setting_expandable_parent_status_size" android:textColor="@color/camera_setting_expandable_menu_text_normal" android:ellipsize="marquee" android:id="@id/TextViewStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="170.0dip" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

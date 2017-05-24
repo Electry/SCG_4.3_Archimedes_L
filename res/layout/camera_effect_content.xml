@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/camera_effect_content_root" android:background="#80292929" android:layout_width="300.0dip" android:layout_height="360.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/camera_effect_duibidu_rl" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <RelativeLayout android:id="@id/duibidu_rl" android:layout_width="80.0dip" android:layout_height="80.0dip">
+            <ImageView android:id="@id/duibidu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_setting_pro_duibidu" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contrast_title" android:layout_below="@id/duibidu" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.lenovo.scg.gallery3d.facepretty.views.SCGSeekBar android:layout_gravity="center" android:id="@id/camera_effect_seekbar_duibidu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="20.0dip" android:maxHeight="@dimen/face_pretty_seekbar_maxheight" android:max="10" android:progress="5" android:progressDrawable="@drawable/faceeffect_seekbar_style" android:minHeight="@dimen/face_pretty_seekbar_minheight" android:thumb="@drawable/face_pretty_seekbar_thumb_selector_hor" android:layout_toRightOf="@id/duibidu_rl" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/divider_below_duibidu" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/camera_effect_duibidu_rl" />
+    <RelativeLayout android:id="@id/camera_effect_baohedu_rl" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_below="@id/divider_below_duibidu">
+        <RelativeLayout android:id="@id/baohedu_rl" android:layout_width="80.0dip" android:layout_height="80.0dip">
+            <ImageView android:id="@id/baohedu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_setting_pro_baohedu" android:layout_centerInParent="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+            <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/saturation_title" android:layout_below="@id/baohedu" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.lenovo.scg.gallery3d.facepretty.views.SCGSeekBar android:layout_gravity="center" android:id="@id/camera_effect_seekbar_baohedu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="20.0dip" android:maxHeight="@dimen/face_pretty_seekbar_maxheight" android:max="10" android:progress="5" android:progressDrawable="@drawable/faceeffect_seekbar_style" android:minHeight="@dimen/face_pretty_seekbar_minheight" android:thumb="@drawable/face_pretty_seekbar_thumb_selector_hor" android:layout_toRightOf="@id/baohedu_rl" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/divider_below_baohedu" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/camera_effect_baohedu_rl" />
+    <RelativeLayout android:id="@id/camera_effect_ruidu_rl" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_below="@id/divider_below_baohedu">
+        <RelativeLayout android:id="@id/ruidu_rl" android:layout_width="80.0dip" android:layout_height="80.0dip">
+            <ImageView android:id="@id/ruidu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_setting_pro_ruidu" android:layout_centerInParent="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+            <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/acutance_title" android:layout_below="@id/ruidu" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.lenovo.scg.gallery3d.facepretty.views.SCGSeekBar android:layout_gravity="center" android:id="@id/camera_effect_seekbar_ruidu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="20.0dip" android:maxHeight="@dimen/face_pretty_seekbar_maxheight" android:max="36" android:progress="18" android:progressDrawable="@drawable/faceeffect_seekbar_style" android:minHeight="@dimen/face_pretty_seekbar_minheight" android:thumb="@drawable/face_pretty_seekbar_thumb_selector_hor" android:layout_toRightOf="@id/ruidu_rl" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

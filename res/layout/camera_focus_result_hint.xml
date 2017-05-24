@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.focus.FocusResultScreenHint android:id="@id/focus_result_hint" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/focus_result_hint_bg_land" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-7.0dip" android:layout_marginBottom="110.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:rotation="90.0">
+        <TextView android:textSize="10.666687dip" android:textColor="#ccffffff" android:ellipsize="end" android:gravity="left" android:id="@id/focus_result_hint_land" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/nothing" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/focus_result_hint_bg_port" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="10.666687dip" android:textColor="#ccffffff" android:ellipsize="end" android:gravity="left" android:id="@id/focus_result_hint_port" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/nothing" android:singleLine="true" />
+    </LinearLayout>
+</com.lenovo.scg.camera.focus.FocusResultScreenHint>

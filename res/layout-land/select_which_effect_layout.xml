@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/composer_buttons_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/select_foure" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.lenovo.scg.gallery3d.facepretty.views.CircleProgressView android:gravity="center_horizontal" android:id="@id/eye_vivi_button" android:background="@drawable/face_pretty_bg_wheel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.lenovo.scg.gallery3d.facepretty.views.CircleProgressView android:id="@id/eye_button" android:background="@drawable/face_pretty_bg_wheel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.lenovo.scg.gallery3d.facepretty.views.CircleProgressView android:id="@id/face_white" android:background="@drawable/face_pretty_bg_wheel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.lenovo.scg.gallery3d.facepretty.views.CircleProgressView android:id="@id/small_face" android:background="@drawable/face_pretty_bg_wheel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/effect_seekbar_layout" android:background="@drawable/bar_bg" android:visibility="invisible" android:layout_width="@dimen/face_pretty_seekbar_bg_layout_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/face_pretty_seekbar_layout_margin_bottom" android:layout_above="@id/select_foure" android:layout_centerHorizontal="true">
+        <SeekBar android:id="@id/effect_seekbar_horizontal" android:visibility="invisible" android:layout_width="@dimen/face_pretty_seekbar_width" android:layout_height="wrap_content" android:maxHeight="@dimen/face_pretty_seekbar_maxheight" android:progressDrawable="@drawable/faceeffect_seekbar_style" android:minHeight="@dimen/face_pretty_seekbar_minheight" android:thumb="@drawable/face_pretty_seekbar_thumb_selector_hor" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/face_effect_p_percent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:layout_alignTop="@id/select_foure" android:layout_alignBottom="@id/select_foure" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="bottom" android:id="@id/face_effect_select_percent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.6">
+            <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/vivi_textview_p_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/face_effect_select_what_percent_value_vivi" style="@style/face_pretty_tvpvalue_style" />
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/eyelarge_textview_p_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/face_effect_select_what_percent_value_largeeye" style="@style/face_pretty_tvpvalue_style" />
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/face_white_textview_p_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/face_effect_select_what_percent_value_white" style="@style/face_pretty_tvpvalue_style" />
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/face_small_textview_p_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/face_effect_select_what_percent_value_largeeye" style="@style/face_pretty_tvpvalue_style" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/face_effect_select_name" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/face_pretty_select_what_name_tv_size" android:textColor="#ffc0c0c0" android:gravity="center_horizontal" android:id="@id/vivi_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_effect_do_vivi" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/face_pretty_select_what_name_tv_size" android:textColor="#ffc0c0c0" android:gravity="center_horizontal" android:id="@id/eyelarge_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_effect_do_eye" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/face_pretty_select_what_name_tv_size" android:textColor="#ffc0c0c0" android:gravity="center_horizontal" android:id="@id/face_white_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_effect_do_white" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/face_pretty_select_what_name_tv_size" android:textColor="#ffc0c0c0" android:gravity="center_horizontal" android:id="@id/face_small_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_effect_do_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

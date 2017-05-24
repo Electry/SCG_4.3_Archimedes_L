@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.mode.ui.StrobeModeUI android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/camera_progresswheel" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.lenovo.scg.camera.ui.ProgressWheel android:id="@id/progress_bar_two" android:layout_width="100.0dip" android:layout_height="100.0dip" ProgressWheel:barColor="#ff339bb9" ProgressWheel:rimColor="#44000000" ProgressWheel:rimWidth="15.0dip" ProgressWheel:spinSpeed="3.0dip" ProgressWheel:barWidth="15.0dip" ProgressWheel:barLength="60.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="#ff0ff0ff" android:layout_gravity="center" android:id="@id/test_strobe_input_count" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+</com.lenovo.scg.camera.mode.ui.StrobeModeUI>

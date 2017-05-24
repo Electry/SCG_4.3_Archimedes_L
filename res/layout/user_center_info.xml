@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.ui.RotateLayout android:id="@id/user_center_dialog_rotate" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff00ff00" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/user_icon" android:background="#ff880000" android:layout_width="90.0dip" android:layout_height="120.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="60.0dip" />
+        <TextView android:id="@id/user_name" android:background="#ff008800" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="60.0dip" android:layout_toRightOf="@id/user_icon" />
+        <RadioButton android:id="@id/radiobutton" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="20.0dip" android:checked="true" android:layout_toRightOf="@id/user_icon" android:layout_below="@id/user_name" />
+        <TextView android:id="@id/user_location" android:background="#ff003300" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="30.0dip" android:layout_toRightOf="@id/radiobutton" android:layout_below="@id/user_name" />
+        <TextView android:id="@id/user_info" android:background="#ff003300" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="20.0dip" android:layout_toRightOf="@id/user_icon" android:layout_below="@id/radiobutton" />
+    </RelativeLayout>
+</com.lenovo.scg.camera.ui.RotateLayout>

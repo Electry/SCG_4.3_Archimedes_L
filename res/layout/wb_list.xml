@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/wbLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlWbListContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.lenovo.scg.gallery3d.weibo.ui.DragBelowUpdateListView android:id="@id/wbContentList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:overScrollMode="never" />
+        <TextView android:enabled="false" android:textSize="16.666992sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvListHint" android:background="#720093d0" android:paddingTop="3.0dip" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="52.0dip" android:text="@string/wb_net_unavailable" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/wbEmptyLayout" android:background="@drawable/wb_time_list_item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/wbEmptyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minLines="1" />
+        <ImageView android:id="@id/imgFailHint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/net_failed_hint" />
+        <Button android:id="@id/wbEmptyBtn" android:background="@drawable/wb_time_btn_bg_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/wb_get_again" />
+    </LinearLayout>
+</LinearLayout>

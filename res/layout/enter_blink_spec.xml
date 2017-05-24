@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/enterblinkspec" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ani_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="144.6dip" android:layout_height="161.6dip" android:src="@drawable/camera_blink_ani_girl" android:contentDescription="@string/nothing" />
+        <ImageView android:id="@id/ani" android:layout_width="104.599976dip" android:layout_height="35.599976dip" android:layout_marginLeft="21.0dip" android:layout_marginTop="69.29999dip" android:contentDescription="@string/nothing" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/short_loading_tips_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/ani_rl" android:layout_centerHorizontal="true">
+        <TextView android:textSize="15.699982dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/short_loading_tips" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_enter_blink_spec" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/dot" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="4.0dip" android:layout_marginBottom="10.0dip" android:contentDescription="@string/nothing" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.ui.RotateImageView android:id="@id/image_capture_flash_button" android:background="@drawable/camera_switchtofront_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="58.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/camera_shortcut_flash_auto" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

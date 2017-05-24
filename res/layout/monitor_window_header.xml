@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/monitor_window_header" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/monitor_header_ll" android:layout_width="160.0dip" android:layout_height="24.0dip">
+        <View android:id="@id/monitor_logo" android:background="@drawable/monitor_top_left_logo" android:layout_width="24.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/window_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="2.0dip" />
+        <Button android:id="@id/window_close" android:background="@drawable/monitor_top_right_selector" android:layout_width="24.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        <View android:background="@drawable/monitor_top_middle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/window_close" android:layout_toRightOf="@id/monitor_logo" />
+    </RelativeLayout>
+    <View android:background="#ff282828" android:layout_width="160.0dip" android:layout_height="2.0dip" android:layout_below="@id/monitor_header_ll" />
+    <View android:background="#ff0099cc" android:layout_width="160.0dip" android:layout_height="1.0dip" android:layout_below="@id/monitor_header_ll" />
+</RelativeLayout>

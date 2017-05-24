@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="100.0dip" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/frame_thumbnail" android:layout_width="100.0dip" android:layout_height="120.0dip" android:src="@drawable/puzzle_frame_1" />
+    <ImageView android:id="@id/frame_select" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/puzzle_checked" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

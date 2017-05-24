@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rotate_tips_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.scg.camera.ui.RotateLayout android:id="@id/short_loading_tips_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/short_loading_tips_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="15.699982dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/short_loading_tips" android:paddingLeft="@dimen/rotate_tips_padding_left_right" android:paddingTop="5.0dip" android:paddingRight="@dimen/rotate_tips_padding_left_right" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="bottom" android:id="@id/dot" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="4.0dip" android:layout_marginBottom="10.0dip" android:contentDescription="@string/nothing" />
+        </LinearLayout>
+    </com.lenovo.scg.camera.ui.RotateLayout>
+</RelativeLayout>

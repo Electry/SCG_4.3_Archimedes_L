@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/weibo_show_image_rl" android:background="#ff404040" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.scg.gallery3d.weibo.views.MulitPointTouchGallery android:id="@id/gallery" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:spacing="10.0dip" />
+    <com.lenovo.scg.gallery3d.weibo.views.WeiboGifView android:id="@id/weibo_wdy_gif" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ScrollView android:id="@id/weibo_wdy_show_image_scallview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <WebView android:layout_gravity="center" android:id="@id/weibo_wdy_show_image_webview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layerType="software" />
+            <ImageView android:id="@id/weibo_wdy_show_image_imageview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:scaleType="fitCenter" android:contentDescription="@null" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/image_top_views_ref" android:layout_width="fill_parent" android:layout_height="53.299988dip" android:layout_alignParentTop="true" layout="@layout/weibo_wdy_showsingle_image_top_views" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cloud_loading_layout" android:background="@color/cloud_loading_dialog_bg" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/cloud_loading_view" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="115.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/cloud_load_view_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cloud_loading_image_one" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/cloud_load_view_two" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cloud_loading_image_two" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/cloud_load_view_three" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cloud_loading_image_three" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/cloud_load_view_four" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cloud_loading_image_four" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/cloud_loading_bar_text_size" android:textColor="@color/cloud_default_text_color" android:gravity="center" android:id="@id/cloud_loading_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.299988dip" android:layout_marginTop="5.0dip" android:text="@string/scloud_loading_text" android:layout_toRightOf="@id/cloud_loading_view" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

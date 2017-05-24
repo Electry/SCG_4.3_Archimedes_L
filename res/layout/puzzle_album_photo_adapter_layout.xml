@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffff0000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="92.0dip" android:layout_height="92.0dip" android:src="@drawable/puzzle_no_photo" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/image_select_layer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:src="@drawable/puzzle_checked" android:adjustViewBounds="true" android:layout_alignRight="@id/image" android:contentDescription="@null" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ff252525" android:layout_width="316.0dip" android:layout_height="272.59375dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wb_change_title_views" android:layout_width="fill_parent" android:layout_height="58.299988dip">
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/wb_change_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wb_change_background_title" />
+    </LinearLayout>
+    <ImageView android:id="@id/wb_change_divide1" android:background="#ff585858" android:layout_width="fill_parent" android:layout_height="0.70000005dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/wb_change_from_gallery" android:background="@drawable/rotate_delete_dialog_cancel_bg" android:layout_width="fill_parent" android:layout_height="82.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/wb_change_from_gallery_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.299988dip" android:src="@drawable/wb_change_background_from_gallery" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffc8c8c8" android:layout_gravity="center" android:id="@id/wb_change_from_gallery_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.599976dip" android:text="@string/wb_change_background_from_gallery_text" />
+    </LinearLayout>
+    <ImageView android:id="@id/wb_change_divide2" android:background="#ff585858" android:layout_width="fill_parent" android:layout_height="0.70000005dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/wb_change_from_photographer" android:background="@drawable/rotate_delete_dialog_cancel_bg" android:layout_width="fill_parent" android:layout_height="83.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/wb_change_from_photographer_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.299988dip" android:src="@drawable/wb_change_background_from_photographer" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffc8c8c8" android:layout_gravity="center" android:id="@id/wb_change_from_photographer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.599976dip" android:text="@string/wb_change_background_from_photographer_text" />
+    </LinearLayout>
+    <ImageView android:id="@id/wb_change_divide3" android:background="#ff585858" android:layout_width="fill_parent" android:layout_height="0.70000005dip" />
+    <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/wb_change_cancel" android:background="@drawable/rotate_delete_dialog_cancel_bg" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="@string/SUS_CANCELBUTTON" />
+</LinearLayout>

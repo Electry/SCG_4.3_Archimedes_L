@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.front.FrontWaterPanel android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:id="@id/camera_front_water_panel_vf" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/camera_front_water_panel_ll_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="30.0dip" android:layout_gravity="center" android:id="@id/camera_front_water_panel_ll_1_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_front_water_page_hint_1" android:shadowColor="#ff000000" android:shadowRadius="3.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/camera_front_water_panel_ll_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="30.0dip" android:layout_gravity="center" android:id="@id/camera_front_water_panel_ll_2_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_front_water_page_hint_2" android:shadowColor="#ff000000" android:shadowRadius="3.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/camera_front_water_panel_ll_3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="30.0dip" android:layout_gravity="center" android:id="@id/camera_front_water_panel_ll_3_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_front_water_page_hint_3" android:shadowColor="#ff000000" android:shadowRadius="3.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/camera_front_water_panel_ll_4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="30.0dip" android:layout_gravity="center" android:id="@id/camera_front_water_panel_ll_4_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_front_water_page_hint_4" android:shadowColor="#ff000000" android:shadowRadius="3.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/camera_front_water_panel_ll_5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="30.0dip" android:layout_gravity="center" android:id="@id/camera_front_water_panel_ll_5_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_front_water_page_hint_5" android:shadowColor="#ff000000" android:shadowRadius="3.0" />
+        </LinearLayout>
+    </ViewFlipper>
+</com.lenovo.scg.camera.front.FrontWaterPanel>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/albumspecview" android:background="#cc000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/sg_top_tab_height">
+        <RelativeLayout android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="24.0dip" android:textColor="@color/main_llCategory_text_hi_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sLocal" android:layout_centerInParent="true" />
+            <ImageView android:layout_width="90.0dip" android:layout_height="3.0dip" android:src="@color/main_llCategory_selected_color" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <RelativeLayout android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="24.0dip" android:textColor="@color/main_llCategory_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sFolder" android:layout_centerInParent="true" />
+            <ImageView android:visibility="invisible" android:layout_width="90.0dip" android:layout_height="3.0dip" android:src="@color/main_llCategory_selected_color" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <RelativeLayout android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="24.0dip" android:textColor="@color/main_llCategory_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sWeibo" android:layout_centerInParent="true" />
+            <ImageView android:visibility="invisible" android:layout_width="90.0dip" android:layout_height="3.0dip" android:src="@color/main_llCategory_selected_color" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="124.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/point_up" />
+    <RelativeLayout android:orientation="vertical" android:background="#ff0094cf" android:layout_width="220.0dip" android:layout_height="115.0dip" android:layout_marginLeft="11.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@color/main_llCategory_text_hi_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:text="@string/setting_album_spec_word" android:layout_centerVertical="true" android:lineSpacingExtra="6.0dip" />
+    </RelativeLayout>
+</LinearLayout>

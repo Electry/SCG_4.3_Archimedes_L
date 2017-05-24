@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/weibo_wdy_repost_rl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+        <com.lenovo.scg.gallery3d.weibo.ui.ImageViewSafe android:id="@id/imgHead" android:layout_width="@dimen/wb_photo_width" android:layout_height="@dimen/wb_photo_height" android:layout_marginLeft="13.329987dip" android:src="@drawable/weibo_wdy_reply_repost_defhead" android:scaleType="fitXY" android:contentDescription="@null" />
+        <com.lenovo.scg.gallery3d.weibo.ui.ImageViewSafe android:id="@id/imgReply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/weibo_wdy_repost_item" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/imgHead" />
+        <TextView android:textColor="#ffc0c0c0" android:id="@id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:singleLine="false" android:layout_toLeftOf="@id/imgReply" android:layout_toRightOf="@id/tvName" android:layout_alignLeft="@id/tvName" android:layout_alignTop="@id/tvName" />
+        <RelativeLayout android:id="@id/weibo_wdy_time_source_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/imgHead" android:layout_below="@id/tvContent">
+            <TextView android:textSize="10.0sp" android:gravity="bottom" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff888888" android:gravity="bottom" android:id="@id/tvSource" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/tvTime" />
+            <Space android:id="@id/weibo_wdy_space" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/tvTime" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

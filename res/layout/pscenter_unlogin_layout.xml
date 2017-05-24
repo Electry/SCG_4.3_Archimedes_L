@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:background="@drawable/pscenter_unlogin_bg" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/pscenter_option_layout" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pscenter_puzzle_option_layout" android:background="@drawable/pscenter_setting_item_selector" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:clickable="true" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:background="@drawable/pscenter_puzzle_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/pscenter_option_text_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/pscenter_puzzle_text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pscenter_setting_option_layout" android:background="@drawable/pscenter_setting_item_selector" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:clickable="true" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:background="@drawable/pscenter_setting_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/pscenter_option_text_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/pscenter_setting" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pscenter_about_option_layout" android:background="@drawable/pscenter_setting_item_selector" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:clickable="true" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:background="@drawable/pscenter_about_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/pscenter_option_text_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/pscenter_setting_about" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sina_weibo_login_layout" android:background="@drawable/pscenter_sinaweibo_item_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="@dimen/pscenter_unloginpage_sinaitem_margin_bottom" android:layout_above="@id/pscenter_option_layout">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pscenter_sina_weibo_icon" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/pscenter_text_white_selector" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pscenter_sina_account_login_text" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/pscenter_welcome_text" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="160.0dip" android:maxWidth="210.0dip" android:text="@string/pscenter_welcome_text" android:singleLine="false" android:layout_above="@id/sina_weibo_login_layout" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="25.0dip" android:layout_above="@id/sina_weibo_login_layout" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pscenter_userinfo_default_avatar" />
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pscenter_userinfo_default_avatar" />
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pscenter_userinfo_default_avatar" />
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pscenter_userinfo_default_avatar" />
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pscenter_userinfo_default_avatar" />
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pscenter_userinfo_default_avatar" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pscenter_userinfo_default_avatar" />
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pscenter_userinfo_default_avatar" />
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pscenter_userinfo_default_avatar" />
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pscenter_userinfo_default_avatar" />
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pscenter_userinfo_default_avatar" />
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/pscenter_userinfo_default_avatar" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

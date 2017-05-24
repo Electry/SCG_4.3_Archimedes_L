@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="2.0dip" android:layout_height="385.0dip" android:layout_marginLeft="28.0dip" android:src="#ffffffff" android:scaleType="fitXY" android:alpha="0.1" />
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/month" android:background="@drawable/wb_month_bg_blue" android:layout_width="@dimen/wb_photo_width" android:layout_height="@dimen/wb_photo_height" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" />
+    <RelativeLayout android:background="@drawable/wb_time_list_item_bg" android:layout_width="300.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <FrameLayout android:id="@id/image_parent" android:layout_width="280.0dip" android:layout_height="280.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_launcher" android:scaleType="centerCrop" android:adjustViewBounds="false" />
+        </FrameLayout>
+        <TextView android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/image_parent" android:layout_alignParentRight="true" />
+        <View android:id="@id/divider" android:background="#40ffffff" android:layout_width="280.0dip" android:layout_height="1.0dip" android:layout_marginTop="7.0dip" android:layout_below="@id/time" android:layout_alignLeft="@id/image_parent" android:layout_centerHorizontal="true" />
+        <LinearLayout android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_below="@id/divider" android:layout_alignLeft="@id/image_parent" android:layout_centerHorizontal="true" style="?android:attr/buttonBarStyle">
+            <ImageButton android:id="@id/attitudes" android:background="@drawable/wb_time_main_btn_bg" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@drawable/btn_like" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+            <ImageButton android:id="@id/repost" android:background="@drawable/wb_time_main_btn_bg" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@drawable/btn_share" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+            <ImageButton android:id="@id/comment" android:background="@drawable/wb_time_main_btn_bg" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@drawable/btn_comment" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/stobe_select_item" android:layout_width="40.0dip" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/round_image_container_left_hand" android:background="@drawable/camera_strobe_line" android:layout_width="0.6600001dip" android:layout_height="14.329987dip" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/round_image_container_right_hand" android:background="@drawable/camera_strobe_line" android:layout_width="0.6600001dip" android:layout_height="14.329987dip" android:layout_marginTop="26.669983dip" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/round_image_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.329987dip">
+        <ImageView android:layout_gravity="center" android:id="@id/round_image_bg" android:visibility="invisible" android:layout_width="13.329987dip" android:layout_height="13.329987dip" android:src="@drawable/camera_stobe_select_anim_circle" />
+        <com.lenovo.scg.camera.ui.RoundImageView android:layout_gravity="center" android:id="@id/round_image" android:layout_width="11.669983dip" android:layout_height="11.669983dip" android:src="@drawable/camera_stobe_select_point" android:scaleType="centerCrop" />
+    </FrameLayout>
+</FrameLayout>

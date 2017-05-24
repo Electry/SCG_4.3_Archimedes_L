@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/weibo_wdy_single_header" android:background="@drawable/main_llcategory_title" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/image_top_views" android:background="@drawable/photo_edit_image_top_views_bg" android:layout_width="fill_parent" android:layout_height="53.299988dip" android:layout_alignParentTop="true">
+        <ImageButton android:id="@id/wb_return" android:background="@drawable/gallery_edit_views_bg" android:layout_width="71.69998dip" android:layout_height="fill_parent" android:src="@drawable/gallery_back_button_bg" android:layout_alignParentLeft="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/edit_line_1" android:background="@color/photo_edit_segment_line_color" android:layout_width="0.70000005dip" android:layout_height="26.699982dip" android:layout_marginTop="13.299988dip" android:layout_toRightOf="@id/wb_return" android:layout_alignParentTop="true" android:contentDescription="@null" />
+        <ImageButton android:id="@id/update_btn" android:background="@drawable/gallery_edit_views_bg" android:layout_width="71.69998dip" android:layout_height="fill_parent" android:src="@drawable/weibo_wdy_single_update" android:layout_alignParentRight="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/edit_line_2" android:background="@color/photo_edit_segment_line_color" android:layout_width="0.70000005dip" android:layout_height="26.699982dip" android:layout_marginTop="13.299988dip" android:layout_toLeftOf="@id/update_btn" android:layout_alignParentTop="true" android:contentDescription="@null" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/edit_line_2" android:layout_toRightOf="@id/wb_return" android:layout_centerInParent="true">
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/weibo_wdy_all_comment" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weibo_wdy_all_comment" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <ImageView android:id="@id/imgHead" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_gallery" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@null" />
+                <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/tvUserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/imgHead" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

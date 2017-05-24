@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@id/rotate_progress_dialog_root_layout" android:background="#55000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.scg.camera.ui.RotateLayout android:gravity="center" android:layout_gravity="center" android:id="@id/rotate_progress_dialog_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/rotate_dialog_bg" android:layout_width="282.6953dip" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/rotate_progress_dialog_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_vertical" android:id="@id/rotate_progress_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:minHeight="64.0dip" style="@android:style/TextAppearance.Holo.DialogWindowTitle" />
+                <View style="@style/PopupTitleSeparator" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center_vertical" android:id="@id/rotate_progress_dialog_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/rotate_progress_dialog_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/TextAppearance.Holo.Medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.lenovo.scg.camera.ui.RotateLayout>
+</FrameLayout>

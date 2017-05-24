@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:background="#44ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/wb_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wb_return" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/wb_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wb_send" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <EditText android:id="@id/wb_repost_content" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/comments_create_input_hint" android:layout_below="@id/header" />
+    <RelativeLayout android:id="@id/bottom" android:background="#44ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <CheckBox android:id="@id/if_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/comment_too" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wb_as_comment" android:layout_toRightOf="@id/if_comment" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

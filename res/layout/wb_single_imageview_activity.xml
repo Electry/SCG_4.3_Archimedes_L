@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:background="#44ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/wb_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wb_return" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/wb_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wb_save" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottom" android:background="#44ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/repost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/repost" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comments_create" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ViewFlipper android:id="@id/ViewFlipper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom" android:layout_below="@id/header" />
+</RelativeLayout>

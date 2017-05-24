@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/photo_edit_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/cancel_crop" android:background="@drawable/gallery_edit_views_bg" android:paddingLeft="1.0dip" android:paddingTop="3.0dip" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/gallery_back_red_button_bg" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@null" />
+    <ImageButton android:id="@id/save_crop" android:background="@drawable/gallery_edit_views_bg" android:paddingTop="3.0dip" android:paddingRight="1.0dip" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/gallery_save_green_button_bg" android:singleLine="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null" />
+</RelativeLayout>

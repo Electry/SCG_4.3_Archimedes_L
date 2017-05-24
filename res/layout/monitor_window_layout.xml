@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="24.0dip">
+        <View android:background="@drawable/monitor_top_left_logo" android:layout_width="24.0dip" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/monitor_top_middle" android:scaleType="fitXY" />
+            <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/window_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="2.0dip" />
+        </FrameLayout>
+        <Button android:id="@id/window_close" android:background="@drawable/monitor_top_right_selector" android:layout_width="24.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <View android:background="#ff0099cc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="12.0dip" android:textStyle="normal" android:textColor="#ffffffff" android:gravity="center" android:id="@id/window_loading" android:background="#e02e2e2e" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/memtotal_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/monitor_memtotal_size" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:id="@id/memfree_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/monitor_memfree_size" android:layout_below="@id/memtotal_size" android:layout_alignParentLeft="true" />
+    <TextView android:id="@id/memscg_used_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/monitor_memscg_use_size" android:layout_below="@id/memfree_size" android:layout_alignParentLeft="true" />
+    <TextView android:id="@id/preview_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/monitor_preview_size" android:layout_below="@id/memscg_used_size" android:layout_alignParentLeft="true" />
+    <TextView android:id="@id/monitor_fps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/monitor_fps" android:layout_below="@id/preview_size" android:layout_alignParentLeft="true" />
+    <TextView android:id="@id/monitor_threads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/monitor_threads" android:layout_below="@id/monitor_fps" android:layout_alignParentLeft="true" />
+</RelativeLayout>

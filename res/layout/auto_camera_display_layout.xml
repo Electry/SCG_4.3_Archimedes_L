@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/auto_camera_display_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.699982dip" android:layout_marginBottom="@dimen/auto_camera_display_margin_bottom" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.lenovo.scg">
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/capture_mode_icon" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginBottom="@dimen/auto_camera_display_margin_between_views" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/video_mode_icon" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginBottom="@dimen/auto_camera_display_margin_between_views" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/flash_icon" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginBottom="@dimen/auto_camera_display_margin_between_views" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/smart_icon" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginBottom="@dimen/auto_camera_display_margin_between_views" />
+</LinearLayout>

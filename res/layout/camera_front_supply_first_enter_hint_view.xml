@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/camera_front_supply_hint_ll" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/camera_front_supply_hint_ll_h" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <ImageView android:background="@drawable/camera_front_supply_hint_arrow_v" android:layout_width="47.299988dip" android:layout_height="106.0dip" android:layout_marginLeft="9.299988dip" android:layout_marginTop="11.299988dip" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/camera_front_supply_hint_text_h" android:background="@drawable/front_spec_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.299988dip" android:layout_marginTop="3.2999878dip" android:maxWidth="210.0dip" android:text="@string/camera_front_setting_supply_first_hint" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/camera_front_supply_hint_ll_v" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/camera_front_supply_hint_arrow_v" android:layout_width="47.299988dip" android:layout_height="106.0dip" android:layout_marginLeft="9.299988dip" android:layout_marginTop="11.299988dip" />
+        <com.lenovo.scg.camera.ui.RotateLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.299988dip" android:layout_marginTop="3.2999878dip" lenovo:orientation="270"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:lenovo="http://schemas.android.com/apk/res/com.lenovo.scg">
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/camera_front_supply_hint_text_v" android:background="@drawable/front_spec_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="310.0dip" android:text="@string/camera_front_setting_supply_first_hint" />
+        </com.lenovo.scg.camera.ui.RotateLayout>
+    </LinearLayout>
+</RelativeLayout>

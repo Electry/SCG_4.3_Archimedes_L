@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.lenovo.scg" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <original-package android:name="com.lenovo.scg"/>
+    <permission android:name="com.lenovo.scg.gallery3d.permission.GALLERY_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="com.lenovo.scg.gallery3d.permission.GALLERY_PROVIDER"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_STORAGE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="false"/>
+    <application android:backupAgent="com.lenovo.scg.camera.CameraBackupAgent" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_camera" android:label="@string/scgcommon_app_name" android:largeHeap="true" android:logo="@mipmap/ic_launcher_gallery" android:name="com.lenovo.scg.gallery3d.app.GalleryAppImpl" android:restoreAnyVersion="true" android:theme="@style/Theme.Gallery">
+        <uses-library android:name="com.intel.camera.extensions" android:required="false"/>
+        <uses-library android:name="com.google.android.media.effects" android:required="false"/>
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIRIXquXawbz6duuuCIUAZ_YJv1zbFMMcjZ0NoVw"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@mipmap/ic_launcher_gallery" android:label="@string/app_name" android:name="com.lenovo.scg.gallery3d.app.Gallery" android:theme="@style/gallery_actionbar_style">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_GALLERY"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:mimeType="vnd.android.cursor.dir/image"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/image"/>
+                <data android:mimeType="vnd.android.cursor.dir/video"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/image"/>
+                <data android:mimeType="vnd.android.cursor.dir/video"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="lenovo.intent.action.START_SCREENSHOT_FOLDER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="com.android.camera.action.REVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme=""/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="image/bmp"/>
+                <data android:mimeType="image/jpeg"/>
+                <data android:mimeType="image/gif"/>
+                <data android:mimeType="image/png"/>
+                <data android:mimeType="image/webp"/>
+                <data android:mimeType="image/x-ms-bmp"/>
+                <data android:mimeType="image/vnd.wap.wbmp"/>
+                <data android:mimeType="application/vnd.google.panorama360+jpg"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.camera.action.REVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="video/mpeg4"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/3gp"/>
+                <data android:mimeType="video/3gpp"/>
+                <data android:mimeType="video/3gpp2"/>
+                <data android:mimeType="application/sdp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.lenovo.scg.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/image"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.cooliris.media.Gallery" android:targetActivity="com.lenovo.scg.gallery3d.app.Gallery">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.lenovo.scg.gallery3d.ingest.IngestActivity" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter"/>
+        </activity>
+        <service android:name="com.lenovo.scg.gallery3d.ingest.IngestService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@mipmap/ic_launcher_gallery" android:name="com.lenovo.scg.gallery3d.app.Wallpaper" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter android:label="@string/camera_setas_wallpaper">
+                <action android:name="android.intent.action.ATTACH_DATA"/>
+                <data android:mimeType="image/*"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.SET_WALLPAPER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="com.lenovo.themecenter.set_wallpaper"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.wallpaper.preview" android:resource="@xml/wallpaper_picker_preview"/>
+        </activity>
+        <activity android:label="@string/trim_label" android:name="com.lenovo.scg.gallery3d.app.TrimVideo"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@mipmap/ic_launcher_gallery" android:label="@string/crop" android:name="com.lenovo.scg.gallery3d.filtershow.crop.CropActivity" android:theme="@style/Theme.FilterShow">
+            <intent-filter android:label="@string/crop_label">
+                <action android:name="com.android.camera.action.CROP"/>
+                <action android:name="lenovo.intent.action.CROP"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:scheme=""/>
+                <data android:mimeType="image/*"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.ALTERNATIVE"/>
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="com.google.android.media.effects" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.lenovo.scg.gallery3d.settings.GallerySettings" android:theme="@style/Theme.Gallery"/>
+        <provider android:authorities="com.lenovo.scg.gallery3d.provider" android:exported="true" android:grantUriPermissions="true" android:name="com.lenovo.scg.gallery3d.provider.GalleryProvider" android:permission="com.lenovo.scg.gallery3d.permission.GALLERY_PROVIDER" android:syncable="false"/>
+        <provider android:authorities="com.lenovo.scg.gallery3d.photoprovider" android:exported="false" android:name="com.lenovo.scg.photos.data.PhotoProvider" android:syncable="false"/>
+        <activity android:name="com.lenovo.scg.gallery3d.gadget.WidgetClickHandler"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.lenovo.scg.gallery3d.app.DialogPicker" android:theme="@style/DialogPickerTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.lenovo.scg.gallery3d.app.AlbumPicker" android:theme="@style/DialogPickerTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.lenovo.scg.gallery3d.gadget.WidgetTypeChooser" android:theme="@style/Theme.Gallery.Dialog"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@mipmap/ic_launcher_camera" android:label="@string/camera_label" android:name="com.lenovo.scg.camera.CameraActivity" android:screenOrientation="portrait" android:taskAffinity="com.lenovo.scg.camera.CameraActivity" android:theme="@style/Theme.Camera" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA"/>
+                <action android:name="lenovo.intent.action.SuperCamera"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.android.keyguard.layout" android:resource="@layout/keyguard_widget"/>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:icon="@mipmap/ic_launcher_camera" android:label="@string/camera_label" android:name="com.lenovo.scg.camera.SecureCameraActivity" android:taskAffinity="com.lenovo.scg.camera.SecureCameraActivity" android:theme="@style/Theme.Camera" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.android.keyguard.layout" android:resource="@layout/keyguard_widget"/>
+        </activity>
+        <activity-alias android:icon="@mipmap/ic_launcher_camera" android:label="@string/camera_label" android:name="com.lenovo.scg.camera.CameraLauncher" android:targetActivity="com.lenovo.scg.camera.CameraActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:icon="@mipmap/ic_launcher_camera" android:label="@string/camera_label" android:name="com.lenovo.scg.camera.Camera" android:targetActivity="com.lenovo.scg.camera.CameraActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:icon="@mipmap/ic_launcher_video_camera" android:label="@string/video_camera_label" android:name="com.lenovo.scg.camera.VideoCamera" android:targetActivity="com.lenovo.scg.camera.CameraActivity">
+            <intent-filter>
+                <action android:name="android.media.action.VIDEO_CAMERA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.VIDEO_CAPTURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <receiver android:label="@string/appwidget_title" android:name="com.lenovo.scg.gallery3d.gadget.PhotoAppWidgetProvider"/>
+        <receiver android:name="com.lenovo.scg.gallery3d.app.PackagesMonitor">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.lenovo.scg.gallery3d.app.PackagesMonitor$AsyncService"/>
+        <receiver android:name="com.lenovo.scg.camera.CameraButtonIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.CAMERA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.lenovo.scg.gallery3d.gadget.WidgetService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.lenovo.scg.gallery3d.gadget.WidgetConfigure" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/face_beauty" android:name="com.android.camera.face_beautification.SmartPlusProcess" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.weibo.net.WeiboShareActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="TimeLineActivity" android:scheme="weiboandroidsdk"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.weibo.net.ShareActivity" android:theme="@style/ContentOverlay" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.android.camera.mode.RemoveActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.android.camera.rewind.RewindActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+        <activity android:icon="@mipmap/ic_launcher_gallery" android:label="@string/sharecenter_label" android:name="com.lenovo.scg.gallery3d.sharecenter.ShareCenterActivity" android:screenOrientation="portrait" android:theme="@style/gallery_actionbar_style">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.android.gallery.action.SHARECENTER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lenovo.scg.gallery3d.sharecenter.LoadingAtivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.lenovo.scg.gallery3d.app.AboutLisenseActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.Light"/>
+        <service android:name="com.lenovo.scg.gallery3d.sharecenter.ShareService"/>
+        <activity android:name="com.tencent.weibo.webview.OAuthV2AuthorizeWebView" android:screenOrientation="portrait" android:theme="@style/Theme.Tencent"/>
+        <activity android:name="com.lenovo.scgcommon.sharecenter.AtActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.lenovo.scg.gallery3d.weibo.activities.SingleImageViewActivity2" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.lenovo.scg.gallery3d.weibo.activities.FriendDetailWbActivity" android:screenOrientation="nosensor"/>
+        <provider android:authorities="com.lenovo.scg.gallery3d.weibo" android:multiprocess="false" android:name="com.lenovo.scg.gallery3d.weibo.util.WeiboProvider" android:syncable="false"/>
+        <activity android:name="com.lenovo.scg.gallery3d.weibo.activities.CommentsListActivity"/>
+        <activity android:name="com.lenovo.scg.gallery3d.weibo.activities.RepostWeiboActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.lenovo.scg.gallery3d.puzzle.PuzzleActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault">
+            <intent-filter>
+                <action android:name="com.android.gallery.action.PUZZLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lenovo.scg.gallery3d.puzzle.BackgroundActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.lenovo.scg.photos.AlbumActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault"/>
+        <activity android:name="com.lenovo.scg.gallery3d.app.SettingActivity" android:screenOrientation="portrait" android:theme="@style/gallery_actionbar_style"/>
+        <activity android:name="com.lenovo.scg.gallery3d.app.SettingDefaultPageActivity" android:screenOrientation="portrait" android:theme="@style/gallery_actionbar_style"/>
+        <activity android:name="com.lenovo.scg.app.SettingImageFilterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.lenovo.scg.gallery3d.app.GalleryAboutActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.Light"/>
+        <activity android:label="@string/lenovo_about" android:name="com.lenovo.scg.gallery3d.about.lenovoabout.LenovoAboutActivity" android:screenOrientation="portrait" android:theme="@style/gallery_actionbar_style">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:name="com.lenovo.scg.gallery3d.about.lenovoabout.LenovoUpdateInfoActivity" android:theme="@style/lenovo_about_stytle"/>
+        <receiver android:name="com.lenovo.scg.gallery3d.about.lenovoabout.LenovoNetReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.lenovo.scg.gallery3d.about.lenovoabout.UpdateAlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.START_SUS_Update"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.lenovo.scg.gallery3d.about.feedback.feedback.FeedbackActivity" android:screenOrientation="portrait" android:theme="@style/FeedbackTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.lenovo.scg.gallery3d.about.feedback.feedback.query.MyFeedbackActivity" android:screenOrientation="portrait" android:theme="@style/FeedbackTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.lenovo.scg.gallery3d.about.feedback.setting.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/FeedbackTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.lenovo.scg.gallery3d.about.feedback.editimage.ImageEditActivity" android:screenOrientation="portrait" android:theme="@style/FeedbackTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.lenovo.scg.gallery3d.about.feedback.feedback.im.FeedbackIMActivity" android:screenOrientation="portrait" android:theme="@style/FeedbackTheme.Light" android:windowSoftInputMode="adjustPan"/>
+        <meta-data android:name="SUS_APPKEY" android:value="YN9Z919UQIY7"/>
+        <meta-data android:name="Lenovo_all" android:value="all"/>
+        <activity android:name="com.lenovo.scg.camera.ProxyLauncher" android:theme="@style/Theme.ProxyLauncher"/>
+        <service android:name="com.lenovo.scg.gallery3d.app.BatchService"/>
+        <service android:name="com.lenovo.scg.camera.MediaSaveService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.lenovo.scg.monitor.MonitorService"/>
+        <activity android:hardwareAccelerated="false" android:name="com.lenovo.scg.gallery3d.app.GifPlayerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lenovo.scg.gallery3d.tiltshift.TiltShiftActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lenovo.scg.gallery3d.tiltshift.BackgroundBlurEffectActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.lenovo.scg.gallery3d.specialEffects.SpecialEffectsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.lenovo.scg.gallery3d.facepretty.FacePrettyActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.lenovo.scg.gallery3d.facepretty.FacePrettyCourseActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lenovo.scg.gallery3d.boxcontrol.BoxControlActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault">
+            <intent-filter>
+                <action android:name="android.boxcontrol.action"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lenovo.scg.gallery3d.boxcontrol.RequestPicsActivity">
+            <intent-filter>
+                <action android:name="android.boxcontrol.request_action"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lenovo.scg.gallery3d.weibo.activities.WbDraft" android:screenOrientation="portrait" android:theme="@style/gallery_actionbar_style"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.lenovo.scg.gallery3d.weibo.activities.WhiteListActivity" android:screenOrientation="nosensor"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="@bool/hardwareaccelerated" android:name="com.lenovo.scg.gallery3d.userGuide.UserGuideMainView" android:screenOrientation="portrait" android:theme="@style/Theme.Gallery_NoTitle"/>
+        <activity android:name="com.lenovo.scg.gallery3d.weibo.activities.WeiboGetAtActivity" android:screenOrientation="portrait"/>
+        <activity android:hardwareAccelerated="false" android:name="com.lenovo.scg.gallery3d.weibo.activities.ShowWeiBoImageActivity" android:screenOrientation="portrait"/>
+        <activity android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="com.lenovo.scg.gallery3d.weibo.views.ViewPagerActivity" android:screenOrientation="portrait"/>
+        <activity android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="com.lenovo.scg.gallery3d.weibo.activities.ReplyRepostActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:icon="@mipmap/ic_launcher_gallery" android:label="@string/app_name" android:name="com.lenovo.scg.gallery3d.materialCenter.material.MaterialMainActivity" android:theme="@style/Theme.Gallery_NoTitle"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:icon="@mipmap/ic_launcher_gallery" android:label="@string/app_name" android:name="com.lenovo.scg.gallery3d.materialCenter.material.DownloadActivity" android:theme="@style/Theme.Gallery_NoTitle"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:icon="@mipmap/ic_launcher_gallery" android:label="@string/app_name" android:name="com.lenovo.scg.gallery3d.materialCenter.material.Download_localActivity" android:theme="@style/Theme.Gallery_NoTitle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.lenovo.scg.gallery3d.materialCenter.photoGrapherWorker.PhotographerWorkAcitivty" android:screenOrientation="portrait" android:theme="@style/Theme.Gallery_NoTitle"/>
+        <activity android:clearTaskOnLaunch="true" android:icon="@mipmap/ic_launcher_minicamera" android:label="@string/kakalib_help_qr" android:name="com.lenovo.scg.minicamera.activity.MiniCameraActivity" android:screenOrientation="nosensor" android:taskAffinity="com.android.minicamera">
+            <intent-filter>
+                <action android:name="com.lenovo.scg.minicamera.qrcode.start"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.lenovo.scg.minicamera.barcode.start"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lenovo.scg.minicamera.activity.MiniCameraWebViewActivity"/>
+        <activity android:name="com.lenovo.scg.gallery3d.cloudalbum.activity.CloudActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Gallery_NoTitle"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/com_lenovo_lsf_ui_name" android:name="com.lenovo.lsf.account.AccountBindingActivity" android:theme="@style/com_lenovo_lsf_ui" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/com_lenovo_lsf_ui_name" android:name="com.lenovo.lsf.account.ChangePasswordActivity" android:theme="@style/com_lenovo_lsf_ui" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.CHANGEPASSWORD"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/com_lenovo_lsf_ui_name" android:name="com.lenovo.lsf.account.ForgetPasswordActivity" android:theme="@style/com_lenovo_lsf_ui" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.FORGETPASSWORD"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/com_lenovo_lsf_ui_name" android:name="com.lenovo.lsf.account.ForgetResultActivity" android:theme="@style/com_lenovo_lsf_ui">
+            <intent-filter>
+                <action android:name="android.intent.action.FORGETRESULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/com_lenovo_lsf_ui_name" android:name="com.lenovo.lsf.account.MyAccountActivity" android:theme="@style/com_lenovo_lsf_ui">
+            <intent-filter>
+                <action android:name="android.intent.action.MYACCOUNT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/com_lenovo_lsf_ui_name" android:launchMode="singleTask" android:name="com.lenovo.lsf.account.PsLoginActivity" android:theme="@style/com_lenovo_lsf_ui" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.LOGINREGISTER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.lenovo.leos.cloud.lcp.demo.openapp.lenovoid"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.lenovo.lsf.account.PsUserSettingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.USERSETTING"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/com_lenovo_lsf_ui_name" android:name="com.lenovo.lsf.account.ThirdLoginWebView" android:theme="@style/com_lenovo_lsf_ui" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="@bool/hardwareaccelerated" android:name="com.lenovo.scg.gallery3d.app.CloudGuideMainView" android:screenOrientation="portrait" android:theme="@style/Theme.Gallery_NoTitle"/>
+        <receiver android:name="com.lenovo.scg.gallery3d.cloudalbum.manager.CloudSMSReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:name="com.lenovo.scg.gallery3d.cloudalbum.activity.CloudDownloadActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:name="com.lenovo.scg.gallery3d.cloudalbum.activity.CloudUploadActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.lenovo.scg.gallery3d.cloudalbum.service.CloudUpAndDownService"/>
+        <receiver android:name="com.lenovo.scg.gallery3d.cloudalbum.manager.CloudSyncReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.camera.NEW_PICTURE"/>
+                <action android:name="android.hardware.action.NEW_PICTURE"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_name" android:name="com.lenovo.scg.gallery3d.tiltshift.BrushEditActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="lenovo_app_suskey" android:value="all"/>
+    </application>
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:gravity="center_vertical" android:id="@id/pscenter_setting_back_layout" android:background="@drawable/pscenter_setting_item_selector" android:padding="10.0dip" android:clickable="true" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/pscenter_setting_back_selector" android:contentDescription="@null" />
+        <TextView android:textSize="21.0sp" android:textColor="@color/pscenter_setting_text_selector" android:gravity="center_vertical" android:id="@id/title_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/pscenter_setting" />
+    </LinearLayout>
+    <View android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="0.70000005dip" />
+    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#ff757575" android:gravity="center|right" android:background="@drawable/pscenter_setting_item_selector" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="21.0dip" android:text="@string/pscenter_setting_gallery_setting" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gallery_setting_layout" android:background="@drawable/pscenter_setting_item_selector" android:paddingLeft="20.0dip" android:paddingRight="18.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/pscenter_setting_text_selector" android:id="@id/default_display_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/pscenter_setting_more_ar_selector" android:drawablePadding="10.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/pscenter_setting_text_selector" android:gravity="right" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/pscenter_setting_defaultpage_title" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#ff757575" android:gravity="center|right" android:background="@drawable/pscenter_setting_item_selector" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="21.0dip" android:text="@string/pscenter_setting_image_filter" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/pscenter_setting_text_selector" android:ellipsize="end" android:gravity="center|right" android:id="@id/default_folder_filter_tv" android:paddingLeft="20.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip" />
+    <View android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/local_image_filter_layout" android:background="@drawable/pscenter_setting_item_selector" android:paddingLeft="20.0dip" android:paddingRight="18.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:id="@id/local_hide_standard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/pscenter_setting_more_ar_selector" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/pscenter_setting_text_selector" android:gravity="right" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/pscenter_setting_local_hide_image" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#ff757575" android:gravity="center|right" android:background="@drawable/pscenter_setting_item_selector" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="21.0dip" android:text="@string/pscenter_setting_other_setting" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/pscenter_setting_item_selector" android:paddingLeft="20.0dip" android:paddingRight="18.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <Switch android:id="@id/photo_view_oriention_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:textOn="@string/pscenter_setting_toogle_on" android:textOff="@string/pscenter_setting_toogle_off" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/pscenter_setting_text_selector" android:gravity="right" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/pscenter_setting_photoview_oreition" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

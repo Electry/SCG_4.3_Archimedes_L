@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/wbHeadFrame" android:background="#44ffffff" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/photo" android:layout_width="@dimen/wb_big_photo_width" android:layout_height="@dimen/wb_big_photo_height" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/ic_launcher" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+    <TextView android:textColor="#ffff0000" android:gravity="center_horizontal" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/photo" android:layout_alignParentLeft="true" />
+    <TextView android:textColor="#ffff0000" android:gravity="center_horizontal" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/photo" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:layout_below="@id/content" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/reposts_count" android:background="#ffffff00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_below="@id/name" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/divider" android:layout_width="1.0dip" android:layout_height="5.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:src="#00000000" android:scaleType="fitXY" android:layout_toRightOf="@id/reposts_count" android:layout_below="@id/name" />
+    <TextView android:id="@id/comments_count" android:background="#ffffff00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/divider" android:layout_below="@id/name" />
+</RelativeLayout>

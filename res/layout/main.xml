@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/gallery_main_container" android:background="@null" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/wb_back_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="360.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/gallery_page_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/gallery_root" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.lenovo.scg.gallery3d.ui.GLRootView android:id="@id/gl_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:id="@id/gl_root_cover" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:id="@id/play_panorama" android:padding="15.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/control_panorama_bg" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@id/date_mark" android:padding="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <include android:id="@id/emptyView" android:visibility="gone" android:layout_centerInParent="true" layout="@layout/empty_view" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/llCategory" android:background="#eaffffff" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                <ImageView android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="0.66700006dip" android:layout_alignParentBottom="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:id="@id/rlLocal" android:background="@drawable/main_llcategory_text_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textSize="@dimen/gallery_tab_text_size_22sp" android:textColor="@drawable/gallery_text_bg_tab" android:id="@id/tvLocal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sLocal" android:layout_centerInParent="true" />
+                        <ImageView android:id="@id/imgLocal" android:layout_width="88.66998dip" android:layout_height="2.0dip" android:src="@color/main_llCategory_selected_color" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rlFolder" android:background="@drawable/main_llcategory_text_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textSize="@dimen/gallery_tab_text_size_18sp" android:textColor="@drawable/gallery_text_bg_tab" android:id="@id/tvFolder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sFolder" android:layout_centerInParent="true" />
+                        <ImageView android:id="@id/imgFolder" android:visibility="invisible" android:layout_width="88.66998dip" android:layout_height="2.0dip" android:src="@color/main_llCategory_selected_color" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rlWeibo" android:background="@drawable/main_llcategory_text_bg_selector" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textSize="24.0dip" android:textColor="@drawable/main_llcategory_text_selector" android:id="@id/tvWeibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sWeibo" android:layout_centerInParent="true" />
+                        <ImageView android:id="@id/imgWeibo" android:visibility="invisible" android:layout_width="90.0dip" android:layout_height="3.0dip" android:src="@color/main_llCategory_selected_color" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@id/rlCamera" android:layout_width="wrap_content" android:layout_height="@dimen/sg_top_tab_height">
+                    <ImageButton android:id="@id/btnCamera" android:clickable="true" android:layout_width="@dimen/sg_goldbox_goldboxbutton_width" android:layout_height="@dimen/sg_goldbox_goldboxbutton_height" android:layout_marginRight="@dimen/sg_goldbox_goldboxbutton_marginright" android:src="@drawable/sg_goldbox_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/rl_folder_filter" android:background="#eaffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rl_folder_filter_title" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                    <ImageView android:id="@id/btn_folder_filter_cancel" android:background="@drawable/gallery_edit_views_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_back_red_button_bg_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                    <TextView android:textSize="20.0dip" android:textColor="#ff191919" android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_filter_title" android:width="270.0dip" android:singleLine="true" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/btn_folder_filter_confirm" android:background="@drawable/gallery_edit_views_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_save_green_button_bg_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                    <ImageView android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="0.66700006dip" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@id/rl_folder_filter_title_tips" android:background="#7f002e3f" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/rl_folder_filter_title">
+                    <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_filter_title_tips" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/llMenu" android:background="#eaffffff" android:layout_width="fill_parent" android:layout_height="@dimen/sg_bottom_tab_height" android:layout_alignParentBottom="true">
+                <TextView android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageButton android:id="@id/btnLeftMenu" android:background="@drawable/main_llcategory_text_bg_selector" android:clickable="true" android:layout_width="60.0dip" android:layout_height="@dimen/sg_bottom_tab_height" android:layout_marginLeft="0.0dip" android:src="@drawable/btn_bg_left_menu" android:scaleType="center" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/llFolderSetting" android:background="#00000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:background="@drawable/main_llcategory_text_bg_selector" android:layout_width="60.0dip" android:layout_height="@dimen/sg_bottom_tab_height" android:src="@drawable/photo_ic_folder_filter_middle_selector" android:scaleType="center" />
+                </LinearLayout>
+                <ImageButton android:id="@id/btnRightMenu" android:background="@drawable/main_llcategory_text_bg_selector" android:clickable="true" android:layout_width="60.0dip" android:layout_height="@dimen/sg_bottom_tab_height" android:layout_marginRight="0.0dip" android:src="@drawable/photo_ic_time_right_menu_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <FrameLayout android:id="@id/footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <View android:id="@id/main_page_cover" android:background="#b2000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/llMenu" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

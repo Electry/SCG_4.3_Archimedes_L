@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.ui.RotateLayout android:layout_width="wrap_content" android:layout_height="wrap_content" lenovo:orientation="270"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:lenovo="http://schemas.android.com/apk/res/com.lenovo.scg">
+    <ImageView android:id="@id/shortcutmove" android:background="@drawable/camera_switchtofront_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/nothing" />
+</com.lenovo.scg.camera.ui.RotateLayout>

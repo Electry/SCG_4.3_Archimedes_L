@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/up_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="?cmccPromptTextColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="16.0dip" android:text="@string/ab_background_data_alert" />
+    <CheckBox android:textSize="16.0sp" android:textColor="?cmccPromptTextColor" android:id="@id/cbDontPromtAgain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:checked="true" android:text="@string/SUS_SETTINGS_NEVERPROMPT" android:alpha="0.6" />
+</LinearLayout>

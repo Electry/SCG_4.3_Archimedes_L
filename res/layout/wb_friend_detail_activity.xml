@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/wb_time_list_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/back_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="360.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/wbLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.lenovo.scg.gallery3d.weibo.ui.DragBelowUpdateListView android:id="@id/wbContentList" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:headerDividersEnabled="false" android:overScrollMode="never" />
+            <TextView android:enabled="false" android:textSize="16.666992sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvListHint" android:background="#720093d0" android:paddingTop="3.0dip" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="52.0dip" android:text="@string/wb_net_unavailable" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/wbEmptyLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/wbEmptyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minLines="1" />
+                <ImageView android:id="@id/imgFailHint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/net_failed_hint" />
+                <Button android:id="@id/wbEmptyBtn" android:background="@drawable/wb_time_btn_bg_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/wb_get_again" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/wb_title_layout" android:background="@drawable/main_llcategory_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/wb_title_image" android:background="@drawable/pscenter_setting_item_selector" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="63.0dip" android:layout_height="52.0dip" android:src="@drawable/sharecenter_back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+            <View android:id="@id/divLeft" android:background="#7fffffff" android:layout_width="1.0dip" android:layout_height="26.0dip" android:layout_toRightOf="@id/wb_title_image" android:layout_centerVertical="true" />
+            <View android:id="@id/divRight" android:background="#00ffffff" android:visibility="invisible" android:layout_width="1.0dip" android:layout_height="26.0dip" android:layout_marginRight="64.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/tvContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_toLeftOf="@id/divRight" android:layout_toRightOf="@id/divLeft" android:layout_centerInParent="true">
+                <TextView android:textSize="21.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/wb_title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wb_loading" android:singleLine="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

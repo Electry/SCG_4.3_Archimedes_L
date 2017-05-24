@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlShootNumber" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.scg.camera.ui.RotateLayout android:orientation="horizontal" android:id="@id/rlPrepare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="143.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="32.0dip" android:id="@id/tvPrepare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/continuous_shot_start" />
+    </com.lenovo.scg.camera.ui.RotateLayout>
+    <com.lenovo.scg.camera.ui.RotateLayout android:orientation="horizontal" android:id="@id/rlRotateShootNumber" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="143.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:id="@id/llShootfigure" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imgCentile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/number_0" />
+            <ImageView android:id="@id/imgTenths" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:src="@drawable/number_0" />
+            <ImageView android:id="@id/imgOnes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:src="@drawable/number_0" />
+        </LinearLayout>
+    </com.lenovo.scg.camera.ui.RotateLayout>
+</RelativeLayout>

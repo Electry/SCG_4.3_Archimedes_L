@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.lenovo.scg">
+    <com.lenovo.scg.camera.ui.RotateLayout android:id="@id/rewind_preview_rotate" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.lenovo.scg.camera.rewind.RewindView android:id="@id/rewind_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+    </com.lenovo.scg.camera.ui.RotateLayout>
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/cancel_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="63.0dip" android:layout_marginBottom="33.0dip" android:src="@drawable/camera_cancel_selector" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/ok_save_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="63.0dip" android:layout_marginBottom="33.0dip" android:src="@drawable/camera_save_selector" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,28 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: SCG_4.3_Archimedes_L_signed.apk
+compressionType: false
+doNotCompress:
+- arsc
+- assets/config
+- zip
+- res/drawable/filtershow_state_button_background
+- res/raw/ab_version
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '17'
+  targetSdkVersion: '21'
+sharedLibrary: false
+unknownFiles:
+  com/sina/sso/RemoteSSO.aidl: '8'
+  org/apache/http/entity/mime/version.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.2
+versionInfo:
+  versionCode: '41241200'
+  versionName: ROW_V4.0.97.06de29a.160201_all

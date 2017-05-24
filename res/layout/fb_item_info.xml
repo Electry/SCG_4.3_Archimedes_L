@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?fbIMInfoBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingLeft="@dimen/fb_activity_horizontal_margin" android:paddingRight="@dimen/fb_activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fb_im_info_top_margin">
+        <TextView android:textSize="@dimen/feedback_text_size_16" android:textColor="?titleNameTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fb_content_title" />
+        <TextView android:textSize="@dimen/feedback_text_size_16" android:textColor="#ff757575" android:id="@id/feedback_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:paddingLeft="@dimen/fb_activity_horizontal_margin" android:paddingRight="@dimen/fb_activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fb_im_info_between_margin">
+        <TextView android:textSize="@dimen/feedback_text_size_16" android:textColor="?titleNameTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fb_appname_title" />
+        <TextView android:textSize="@dimen/feedback_text_size_16" android:textColor="#ff757575" android:id="@id/feedback_appname" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:paddingLeft="@dimen/fb_activity_horizontal_margin" android:paddingRight="@dimen/fb_activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fb_im_info_between_margin">
+        <TextView android:textSize="@dimen/feedback_text_size_16" android:textColor="?titleNameTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fb_time_title" />
+        <TextView android:textSize="@dimen/feedback_text_size_16" android:textColor="#ff757575" android:id="@id/feedback_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:paddingLeft="@dimen/fb_activity_horizontal_margin" android:paddingRight="@dimen/fb_activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fb_im_info_between_margin" android:layout_marginBottom="@dimen/fb_im_info_top_margin">
+        <TextView android:textSize="@dimen/feedback_text_size_16" android:textColor="?titleNameTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fb_version_title" />
+        <TextView android:textSize="@dimen/feedback_text_size_16" android:textColor="#ff757575" android:id="@id/feedback_version" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="?fbLineColor" android:layout_width="fill_parent" android:layout_height="@dimen/fb_divider_size" />
+</LinearLayout>

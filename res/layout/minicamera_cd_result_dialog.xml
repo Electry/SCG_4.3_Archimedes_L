@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="239.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.299988dip">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/minicamera_result_dialog3_image" android:layout_width="98.0dip" android:layout_height="98.0dip" android:src="@drawable/minicamera_cd_image_default" android:scaleType="fitXY" />
+            <ImageView android:layout_width="98.0dip" android:layout_height="98.0dip" android:src="@drawable/minicamera_cd_image_background" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.299988dip">
+            <TextView android:textSize="18.599976dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/minicamera_result_dialog3_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minicamera_baidu_result_book_title" android:singleLine="true" />
+            <TextView android:textSize="13.299988dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/minicamera_result_dialog3_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.599976dip" android:text="@string/minicamera_baidu_result_book_author" android:singleLine="true" />
+            <TextView android:textSize="13.299988dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/minicamera_result_dialog3_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/minicamera_baidu_result_cd_time" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.599976dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff25c6ff" android:id="@id/minicamera_result_dialog3_detail_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minicamera_baidu_result_cd_detail" />
+                <ImageView android:layout_width="7.5999756dip" android:layout_height="14.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/minicamera_result_dialog_detail_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ff7a7a7a" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginTop="23.599976dip" />
+    <TextView android:textSize="20.0dip" android:textColor="@drawable/minicamera_result_dialog_btn_text_color" android:gravity="center" android:id="@id/minicamera_result_dialog3_cancel_btn" android:background="@drawable/minicamera_result_dialog_btn_background" android:layout_width="360.0dip" android:layout_height="43.299988dip" android:text="@android:string/cancel" />
+</LinearLayout>

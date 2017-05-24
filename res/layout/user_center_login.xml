@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.ui.RotateLayout android:id="@id/user_center_dialog_rotate" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff00ff00" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <CheckBox android:id="@id/fllowing_supercamera" android:layout_width="100.0dip" android:layout_height="wrap_content" />
+        <CheckBox android:id="@id/fllowing_supergallery" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_below="@id/fllowing_supercamera" />
+        <WebView android:id="@id/login_weibo" android:background="#aa00ff00" android:visibility="invisible" android:layout_width="300.0dip" android:layout_height="350.0dip" android:layout_toRightOf="@id/fllowing_supercamera" />
+    </RelativeLayout>
+</com.lenovo.scg.camera.ui.RotateLayout>

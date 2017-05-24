@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlSocial" android:background="?mainBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/abActionBar" android:layout_alignParentTop="true" layout="@layout/ab_actionbar" />
+    <View android:id="@id/vTopLine" android:background="?mainDivider" android:layout_width="fill_parent" android:layout_height="@dimen/ab_divider_size" android:layout_below="@id/abActionBar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/vTopLine">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llCenter" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/ivAppIcon" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginTop="28.0dip" android:scaleType="fitXY" />
+                <TextView android:textSize="30.0sp" android:textColor="?appNameTextColor" android:gravity="center_horizontal" android:id="@id/tvAppName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/lenovo_about_app_name" android:includeFontPadding="true" />
+                <TextView android:textSize="8.0sp" android:textColor="?versionNameTextColor" android:id="@id/tvAppVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="28.0dip" android:text="@string/lenovo_about_version_name" android:includeFontPadding="false" />
+            </LinearLayout>
+            <View android:id="@id/vCenterLine" android:background="?mainDivider" android:layout_width="fill_parent" android:layout_height="@dimen/ab_divider_size" android:layout_below="@id/llCenter" />
+            <ViewFlipper android:orientation="vertical" android:id="@id/vfList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/llCopyright" android:layout_below="@id/vCenterLine">
+                <LinearLayout android:orientation="vertical" android:id="@id/llListTop" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.lenovo.scg.gallery3d.about.lenovoabout.ui.TwoLineListItemView android:id="@id/tivNewVersionIntroduction" android:layout_width="fill_parent" android:layout_height="wrap_content" app:abTitle="@string/gallery_about_other_version_new" app:abShowArrow="true" app:abShowSummary="false" />
+                    <com.lenovo.scg.gallery3d.about.lenovoabout.ui.TwoLineListItemView android:id="@id/tivContact" android:layout_width="fill_parent" android:layout_height="wrap_content" app:abTitle="@string/ab_contacts" app:abShowArrow="true" app:abShowSummary="false" />
+                    <com.lenovo.scg.gallery3d.about.lenovoabout.ui.TwoLineListItemView android:id="@id/tivFeedback" android:layout_width="fill_parent" android:layout_height="wrap_content" app:abTitle="@string/ab_feedback" app:abShowArrow="true" app:abShowSummary="false" />
+                    <com.lenovo.scg.gallery3d.about.lenovoabout.ui.TwoLineListItemView android:id="@id/tivCheckUpdate" android:layout_width="fill_parent" android:layout_height="wrap_content" app:abTitle="@string/lenovo_about_update" app:abShowArrow="false" app:abShowSummary="false" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.lenovo.scg.gallery3d.about.lenovoabout.ui.TwoLineListItemView android:id="@id/tivEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" app:abTitle="@string/lenovo_about_email" app:abShowArrow="true" app:abShowSummary="true" />
+                    <com.lenovo.scg.gallery3d.about.lenovoabout.ui.TwoLineListItemView android:id="@id/tivSina" android:layout_width="fill_parent" android:layout_height="wrap_content" app:abTitle="@string/lenovo_about_weibo" app:abShowArrow="true" app:abShowSummary="true" />
+                    <com.lenovo.scg.gallery3d.about.lenovoabout.ui.TwoLineListItemView android:id="@id/tivQQGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" app:abTitle="@string/lenovo_about_qqgroup" app:abShowArrow="false" app:abShowSummary="true" />
+                    <com.lenovo.scg.gallery3d.about.lenovoabout.ui.TwoLineListItemView android:id="@id/tivWebsite" android:layout_width="fill_parent" android:layout_height="wrap_content" app:abTitle="@string/ab_website" app:abShowArrow="true" app:abShowSummary="true" />
+                    <com.lenovo.scg.gallery3d.about.lenovoabout.ui.TwoLineListItemView android:id="@id/tivWeixin" android:layout_width="fill_parent" android:layout_height="wrap_content" app:abTitle="@string/ab_weixin" app:abShowArrow="false" app:abShowSummary="true" />
+                    <com.lenovo.scg.gallery3d.about.lenovoabout.ui.TwoLineListItemView android:id="@id/tivBBS" android:layout_width="fill_parent" android:layout_height="wrap_content" app:abTitle="@string/ab_bbs" app:abShowArrow="true" app:abShowSummary="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/llCheckUpdates" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </ViewFlipper>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llCopyright" android:background="?copyrightBackground" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="8.0sp" android:textColor="?copyrightTextColor" android:gravity="center" android:id="@id/tvCopyrightCN" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lenovo_about_AboutInfoCopyRight_Cn" />
+        <TextView android:textSize="8.0sp" android:textColor="?copyrightTextColor" android:gravity="center" android:id="@id/tvCopyrightEN" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/lenovo_about_AboutInfoCopyRight_En" />
+    </LinearLayout>
+</RelativeLayout>

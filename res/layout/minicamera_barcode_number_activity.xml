@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/barcode_number_activity_header_layout" layout="@layout/minicamera_barcode_number_activity_header" />
+    <RelativeLayout android:id="@id/barcode_number_activity_content" android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_below="@id/barcode_number_activity_header_layout">
+        <EditText android:textSize="18.599976dip" android:textColor="#ff333333" android:textColorHint="#ffafafaf" android:id="@id/barcode_number_activity_input_editview" android:background="@drawable/minicamera_barcode_number_activity_input_background" android:layout_width="280.59375dip" android:layout_height="40.599976dip" android:layout_marginLeft="17.299988dip" android:hint="@string/barcode_number_activity_editview_hint" />
+        <ImageView android:id="@id/barcode_number_activity_search_btn" android:layout_width="40.599976dip" android:layout_height="40.599976dip" android:layout_marginLeft="4.0dip" android:src="@drawable/minicamera_barcode_number_activity_search" android:layout_toRightOf="@id/barcode_number_activity_input_editview" />
+    </RelativeLayout>
+</RelativeLayout>

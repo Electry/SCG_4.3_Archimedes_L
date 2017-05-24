@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <View android:layout_width="40.0dip" android:layout_height="1.0dip" android:contentDescription="@string/nothing" />
+        <ImageView android:id="@id/handv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_gesture_v" android:contentDescription="@string/nothing" />
+        <View android:layout_width="25.0dip" android:layout_height="1.0dip" android:contentDescription="@string/nothing" />
+        <ImageView android:id="@id/handfive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_gesture_five" android:contentDescription="@string/nothing" />
+        <View android:layout_width="40.0dip" android:layout_height="1.0dip" android:contentDescription="@string/nothing" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/short_loading_tips_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/hand" android:layout_centerHorizontal="true">
+        <TextView android:textSize="15.699982dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_enter_gesture_spec" />
+        <ImageView android:layout_gravity="bottom" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="4.0dip" android:layout_marginBottom="10.0dip" android:contentDescription="@string/nothing" />
+    </LinearLayout>
+</RelativeLayout>

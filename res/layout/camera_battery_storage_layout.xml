@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/battery_storage_layout" android:layout_width="43.399994dip" android:layout_height="@dimen/camera_storage_max_height" android:layout_marginBottom="110.69998dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.lenovo.scg">
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/battery_image" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginRight="22.699982dip" android:src="@drawable/camera_low_battery_image" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/storage_serious_low_image" android:visibility="gone" android:layout_width="15.779999dip" android:layout_height="15.779999dip" android:layout_marginRight="25.5dip" android:layout_marginBottom="27.699982dip" android:src="@drawable/camera_serious_low_storage_image" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/storage_image" android:visibility="gone" android:layout_width="15.779999dip" android:layout_height="15.779999dip" android:layout_marginRight="25.5dip" android:layout_marginBottom="27.5dip" android:src="@drawable/camera_storage_image" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

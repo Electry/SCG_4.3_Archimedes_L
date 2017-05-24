@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/camera_controls" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlRightButtons" android:layout_width="fill_parent" android:layout_height="@dimen/control_panel_min_length" android:layout_alignParentBottom="true">
+        <include layout="@layout/review_thumbnail" />
+        <include layout="@layout/camera_shutter_button" />
+        <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/mode_menu_button" android:layout_width="@dimen/mode_button_width" android:layout_height="@dimen/mode_button_width" android:layout_marginLeft="@dimen/mode_button_marginright" android:layout_marginBottom="@dimen/mode_button_marginbottom" android:src="@drawable/camera_mode_button_auto" android:layout_alignParentBottom="true" android:onClick="onModeButtonClick" />
+    </RelativeLayout>
+    <include layout="@layout/pro_tutorial" />
+    <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/cameraswitchtofront" android:background="@drawable/camera_switchtofront_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/camera_switchtofront" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <include layout="@layout/camera_setting_view_layers" />
+</RelativeLayout>

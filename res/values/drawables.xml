@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="cloud_transparent_background">#00000000</item>
+    <item type="drawable" name="cloud_head_line">#4cffffff</item>
+    <item type="drawable" name="cloud_btn_bg_normal">#00000000</item>
+    <item type="drawable" name="cloud_btn_bg_pressed">#ff25c6ff</item>
+    <item type="drawable" name="cloud_pop_item_normal">#00000000</item>
+    <item type="drawable" name="cloud_pop_item_pressed">#ff0093d0</item>
+    <item type="drawable" name="cloud_upandown_titlebar_btn_normal">#ff474747</item>
+    <item type="drawable" name="cloud_divider">#ff464646</item>
+    <item type="drawable" name="cloud_bg_color">#ff404040</item>
+    <item type="drawable" name="cloud_photo_bg_color">#ff000000</item>
+    <item type="drawable" name="personcenter_options_bg">#ff2f2f2f</item>
+    <item type="drawable" name="personcenter_cloud_unlogin_login_btn_normal">#ff0099ff</item>
+    <item type="drawable" name="personcenter_cloud_unlogin_login_btn_selected">#ff0073bf</item>
+    <item type="drawable" name="personcenter_cloud_check_bg_normal">#00000000</item>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.scg.camera.setting.ExpandableSettingListLayout android:id="@id/camera_setting_expandable_setting_root_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:camera="http://schemas.android.com/apk/res/com.android.gallery3d">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/menu_layout" android:background="#bf000000" android:clickable="true" android:layout_width="@dimen/camera_setting_expandable_menu_width" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/common_layout" android:background="@drawable/camera_pro_setting_menu_bg_selector" android:focusable="true" android:layout_width="@dimen/camera_setting_expandable_menu_width" android:layout_height="@dimen/camera_setting_expandable_parent_min_height">
+                <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/camera_setting_photo_riv" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/camera_settings_photo" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/extend_layout" android:background="@drawable/camera_pro_setting_menu_bg_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/camera_setting_expandable_parent_min_height" android:layout_below="@id/common_layout">
+                <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/camera_setting_video_riv" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/camera_settings_video" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/other_layout" android:background="@drawable/camera_pro_setting_menu_bg_selector" android:layout_width="fill_parent" android:layout_height="@dimen/camera_setting_expandable_parent_min_height" android:layout_below="@id/extend_layout">
+                <com.lenovo.scg.camera.ui.RotateImageView android:id="@id/camera_setting_more_riv" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/camera_settings_more" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/menu_layout">
+            <com.lenovo.scg.camera.ui.RotateLayout android:id="@id/ExpandableListView01_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ExpandableListView android:scrollbarThumbVertical="@drawable/camera_setting_huadongtiao" android:scrollbarAlwaysDrawHorizontalTrack="true" android:id="@id/ExpandableListView01" android:background="@drawable/camera_pro_setting_expand_listview_bg" android:clickable="true" android:layout_width="@dimen/camera_setting_expandable_view_width" android:layout_height="fill_parent" android:groupIndicator="@null" android:dividerHeight="0.11109996dip" />
+            </com.lenovo.scg.camera.ui.RotateLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.lenovo.scg.camera.setting.ExpandableSettingListLayout>
